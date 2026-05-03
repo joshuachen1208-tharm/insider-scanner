@@ -1,0 +1,45 @@
+name: Daily Insider Cluster Scan
+
+on:
+  schedule:
+    # 7:00 AM Eastern = 12:00 UTC (EST) / 11:00 UTC (EDT)
+    # Using 11:00 UTC to cover EDT (summer); adjust to 12:00 for EST (winter)
+    - cron: '0 11 * * *'
+  workflow_dispatch:   # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write      # needed to commit updated dashboard data
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run insider scanner
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+        run: python scanner.py
+
+      - name: Commit and push dashboard data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/results.json data/results.json
+          # Only commit if there are actual changes
+          git diff --staged --quiet || git commit -m "chore: update scanner results $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
