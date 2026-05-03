@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEC Insider Cluster Scanner</title>
+  <style>
+    :root {
+      --bg: #f0f2f5;
+      --surface: #ffffff;
+      --border: #e5e7eb;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --green: #16a34a;
+      --amber: #d97706;
+      --red: #dc2626;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    }
+    header h1 { font-size: 18px; font-weight: 700; letter-spacing: -.3px; }
+    header h1 span { color: #60a5fa; }
+    #last-updated { font-size: 12px; color: #9ca3af; }
+
+    /* ── Layout ── */
+    .container { max-width: 1400px; margin: 0 auto; padding: 24px 20px; }
+
+    /* ── Metrics row ── */
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .metric-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .metric-card .label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .metric-card .value {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .metric-card .sub { font-size: 12px; color: var(--muted); }
+    .metric-card.accent .value { color: var(--accent); }
+    .metric-card.green .value  { color: var(--green); }
+
+    /* ── Section heading ── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .section-header h2 { font-size: 16px; font-weight: 700; }
+
+    /* ── Filters ── */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .filters input, .filters select {
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 8px 12px;
+      font-size: 13px;
+      outline: none;
+      background: var(--surface);
+      color: var(--text);
+      transition: border-color .15s;
+    }
+    .filters input:focus, .filters select:focus { border-color: var(--accent); }
+    .filters input { flex: 1; min-width: 200px; }
+
+    /* ── Clusters grid ── */
+    .clusters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .cluster-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      cursor: pointer;
+      transition: box-shadow .15s, border-color .15s;
+      position: relative;
+      overflow: hidden;
+    }
+    .cluster-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+    }
+    .cluster-card.strength-very-strong::before { background: var(--green); }
+    .cluster-card.strength-strong::before { background: var(--accent); }
+    .cluster-card.strength-moderate::before { background: var(--amber); }
+    .cluster-card.strength-weak::before { background: var(--muted); }
+    .cluster-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.1); border-color: #d1d5db; }
+    .cluster-card.active { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(37,99,235,.2); }
+
+    .cluster-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+    .cluster-ticker { font-size: 22px; font-weight: 800; color: var(--text); }
+    .cluster-company { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      white-space: nowrap;
+    }
+    .badge-very-strong { background: #dcfce7; color: #15803d; }
+    .badge-strong      { background: #dbeafe; color: #1d4ed8; }
+    .badge-moderate    { background: #fef3c7; color: #b45309; }
+    .badge-weak        { background: #f3f4f6; color: #4b5563; }
+
+    .cluster-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .stat-box {
+      background: #f9fafb;
+      border-radius: 6px;
+      padding: 8px 6px;
+      text-align: center;
+    }
+    .stat-box .slabel { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+    .stat-box .svalue { font-size: 18px; font-weight: 700; margin-top: 2px; }
+    .stat-box.dollars .svalue { color: var(--accent); font-size: 15px; }
+
+    .cluster-insiders { font-size: 12px; }
+    .insider-row { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .insider-row:last-child { border-bottom: none; }
+    .insider-name { font-weight: 600; }
+    .insider-role { color: var(--muted); font-size: 11px; }
+    .insider-amount { text-align: right; }
+    .insider-amount .shares { color: var(--muted); }
+
+    /* ── All Transactions table ── */
+    .table-wrapper {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead tr { background: #f9fafb; border-bottom: 2px solid var(--border); }
+    th {
+      padding: 11px 14px;
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted);
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      user-select: none;
+    }
+    th:hover { color: var(--text); }
+    th .sort-icon { margin-left: 4px; opacity: .4; }
+    th.sorted .sort-icon { opacity: 1; }
+    td { padding: 10px 14px; border-bottom: 1px solid #f3f4f6; vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: #f9fafb; }
+    .td-ticker { font-weight: 700; color: var(--accent); }
+    .td-dollars { font-weight: 600; }
+    .td-role { color: var(--muted); }
+
+    /* ── Detail panel ── */
+    #detail-panel {
+      display: none;
+      position: fixed;
+      top: 60px; right: 0; bottom: 0;
+      width: 420px;
+      background: var(--surface);
+      border-left: 1px solid var(--border);
+      overflow-y: auto;
+      z-index: 90;
+      box-shadow: -4px 0 20px rgba(0,0,0,.08);
+    }
+    #detail-panel.open { display: block; }
+    .panel-header {
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background: var(--surface);
+      z-index: 1;
+    }
+    .panel-header h3 { font-size: 18px; font-weight: 800; }
+    #close-panel {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 10px;
+      cursor: pointer;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    #close-panel:hover { background: #f3f4f6; }
+    .panel-body { padding: 18px 20px; }
+    .panel-section { margin-bottom: 20px; }
+    .panel-section h4 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 10px; font-weight: 700; }
+
+    .panel-stat-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+    .pstat { background: #f9fafb; border-radius: 7px; padding: 10px; text-align: center; }
+    .pstat .pl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+    .pstat .pv { font-size: 20px; font-weight: 700; margin-top: 3px; }
+
+    .panel-txn { background: #f9fafb; border-radius: 7px; padding: 12px; margin-bottom: 8px; }
+    .panel-txn .ptop { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px; }
+    .panel-txn .pname { font-weight: 700; font-size: 14px; }
+    .panel-txn .pdollars { font-weight: 700; color: var(--accent); }
+    .panel-txn .pmeta { font-size: 12px; color: var(--muted); }
+
+    /* ── EDGAR link ── */
+    .edgar-link { font-size: 12px; color: var(--accent); text-decoration: none; }
+    .edgar-link:hover { text-decoration: underline; }
+
+    /* ── Empty state ── */
+    .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+    .empty .icon { font-size: 48px; margin-bottom: 12px; }
+
+    /* ── Loading spinner ── */
+    #loading {
+      position: fixed;
+      inset: 0;
+      background: rgba(240,242,245,.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 200;
+      gap: 12px;
+    }
+    .spinner {
+      width: 40px; height: 40px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Responsive ── */
+    @media (max-width: 700px) {
+      .clusters-grid { grid-template-columns: 1fr; }
+      #detail-panel { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <div style="color:#6b7280;font-size:14px">Loading scanner data…</div>
+</div>
+
+<header>
+  <h1>SEC <span>Insider</span> Cluster Scanner</h1>
+  <div id="last-updated">Loading…</div>
+</header>
+
+<div class="container">
+  <!-- Metrics -->
+  <div class="metrics">
+    <div class="metric-card green">
+      <div class="label">Total Clusters</div>
+      <div class="value" id="m-clusters">—</div>
+      <div class="sub">≥2 insiders in 5d window</div>
+    </div>
+    <div class="metric-card accent">
+      <div class="label">Total Transactions</div>
+      <div class="value" id="m-txns">—</div>
+      <div class="sub">Open-market purchases</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Total Buy Value</div>
+      <div class="value" id="m-value" style="font-size:22px">—</div>
+      <div class="sub">Across all clusters</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Very Strong Signals</div>
+      <div class="value" id="m-strong">—</div>
+      <div class="sub">Highest conviction</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Lookback Period</div>
+      <div class="value" id="m-lookback">—</div>
+      <div class="sub">Days of filings</div>
+    </div>
+  </div>
+
+  <!-- Cluster cards -->
+  <div class="section-header">
+    <h2>Insider Buying Clusters</h2>
+  </div>
+  <div class="filters">
+    <input type="text" id="search-clusters" placeholder="Search ticker or company…" />
+    <select id="filter-strength">
+      <option value="">All Signal Strengths</option>
+      <option value="VERY STRONG">Very Strong</option>
+      <option value="STRONG">Strong</option>
+      <option value="MODERATE">Moderate</option>
+      <option value="WEAK">Weak</option>
+    </select>
+    <select id="sort-clusters">
+      <option value="dollars">Sort: Total Value</option>
+      <option value="insiders">Sort: Insider Count</option>
+      <option value="shares">Sort: Total Shares</option>
+    </select>
+  </div>
+  <div class="clusters-grid" id="clusters-grid">
+    <div class="empty"><div class="icon">📊</div><p>Loading clusters…</p></div>
+  </div>
+
+  <!-- All transactions table -->
+  <div class="section-header" style="margin-top:8px">
+    <h2>All Filings</h2>
+    <span id="table-count" style="font-size:13px;color:var(--muted)"></span>
+  </div>
+  <div class="filters">
+    <input type="text" id="search-table" placeholder="Search ticker, name, role…" />
+    <select id="filter-table-strength">
+      <option value="">All Strengths</option>
+      <option value="VERY STRONG">Very Strong</option>
+      <option value="STRONG">Strong</option>
+      <option value="MODERATE">Moderate</option>
+      <option value="WEAK">Weak</option>
+    </select>
+  </div>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th data-col="ticker">Ticker <span class="sort-icon">↕</span></th>
+          <th data-col="buyer_name">Insider <span class="sort-icon">↕</span></th>
+          <th data-col="role">Role <span class="sort-icon">↕</span></th>
+          <th data-col="transaction_date">Date <span class="sort-icon">↕</span></th>
+          <th data-col="shares">Shares <span class="sort-icon">↕</span></th>
+          <th data-col="total_dollars">Value <span class="sort-icon">↕</span></th>
+          <th data-col="price_per_share">Price <span class="sort-icon">↕</span></th>
+          <th>Filing</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr><td colspan="8" style="text-align:center;padding:30px;color:var(--muted)">Loading…</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Detail panel -->
+<div id="detail-panel">
+  <div class="panel-header">
+    <h3 id="panel-title">—</h3>
+    <button id="close-panel" onclick="closePanel()">✕ Close</button>
+  </div>
+  <div class="panel-body" id="panel-body"></div>
+</div>
+
+<script>
+  // ── State ──
+  let rawData = null;
+  let allClusters = [];
+  let allTxns = [];
+  let tableSort = { col: 'total_dollars', dir: -1 };
+
+  // ── Fetch data ──
+  async function loadData() {
+    try {
+      const resp = await fetch('results.json?' + Date.now());
+      rawData = await resp.json();
+    } catch(e) {
+      // Fallback: try sample data
+      rawData = { clusters: [], all_transactions: [], total_clusters: 0, total_transactions: 0, generated_at: new Date().toISOString(), lookback_days: 3, cluster_window_days: 5 };
+    }
+    document.getElementById('loading').style.display = 'none';
+    allClusters = rawData.clusters || [];
+    allTxns = rawData.all_transactions || [];
+    renderMetrics();
+    renderClusters();
+    renderTable();
+    const d = new Date(rawData.generated_at);
+    document.getElementById('last-updated').textContent = 'Updated: ' + d.toLocaleString();
+  }
+
+  // ── Metrics ──
+  function renderMetrics() {
+    document.getElementById('m-clusters').textContent = allClusters.length;
+    document.getElementById('m-txns').textContent = allTxns.length;
+    const totalVal = allClusters.reduce((s, c) => s + c.total_dollars, 0);
+    document.getElementById('m-value').textContent = formatDollars(totalVal);
+    const veryStrong = allClusters.filter(c => c.signal_strength === 'VERY STRONG').length;
+    document.getElementById('m-strong').textContent = veryStrong;
+    document.getElementById('m-lookback').textContent = rawData.lookback_days || 3;
+  }
+
+  // ── Clusters ──
+  function filteredClusters() {
+    const q = document.getElementById('search-clusters').value.toLowerCase();
+    const str = document.getElementById('filter-strength').value;
+    const sortBy = document.getElementById('sort-clusters').value;
+    let list = allClusters.filter(c => {
+      const matchQ = !q || c.ticker.toLowerCase().includes(q) || c.company.toLowerCase().includes(q);
+      const matchStr = !str || c.signal_strength === str;
+      return matchQ && matchStr;
+    });
+    if (sortBy === 'insiders') list.sort((a,b) => b.insider_count - a.insider_count);
+    else if (sortBy === 'shares') list.sort((a,b) => b.total_shares - a.total_shares);
+    else list.sort((a,b) => b.total_dollars - a.total_dollars);
+    return list;
+  }
+
+  function renderClusters() {
+    const list = filteredClusters();
+    const grid = document.getElementById('clusters-grid');
+    if (!list.length) {
+      grid.innerHTML = '<div class="empty"><div class="icon">🔍</div><p>No clusters match your filters.</p></div>';
+      return;
+    }
+    grid.innerHTML = list.map((c, i) => clusterCardHTML(c, i)).join('');
+    grid.querySelectorAll('.cluster-card').forEach((el, i) => {
+      el.addEventListener('click', () => openPanel(list[i]));
+    });
+  }
+
+  function strengthClass(s) {
+    return s.toLowerCase().replace(' ', '-');
+  }
+  function badgeClass(s) {
+    return 'badge badge-' + strengthClass(s);
+  }
+
+  function clusterCardHTML(c) {
+    const insiderRows = c.insiders.map(ins => `
+      <div class="insider-row">
+        <div>
+          <div class="insider-name">${esc(ins.name)}</div>
+          <div class="insider-role">${esc(ins.role)}</div>
+        </div>
+        <div class="insider-amount">
+          <div style="font-weight:600;color:var(--accent)">${formatDollars(ins.dollars)}</div>
+          <div class="shares">${ins.shares.toLocaleString(undefined,{maximumFractionDigits:0})} sh</div>
+        </div>
+      </div>`).join('');
+
+    return `<div class="cluster-card strength-${strengthClass(c.signal_strength)}">
+      <div class="cluster-top">
+        <div>
+          <div class="cluster-ticker">${esc(c.ticker || '—')}</div>
+          <div class="cluster-company">${esc(c.company)}</div>
+        </div>
+        <span class="${badgeClass(c.signal_strength)}">${esc(c.signal_strength)}</span>
+      </div>
+      <div class="cluster-stats">
+        <div class="stat-box">
+          <div class="slabel">Insiders</div>
+          <div class="svalue">${c.insider_count}</div>
+        </div>
+        <div class="stat-box">
+          <div class="slabel">Shares</div>
+          <div class="svalue">${fmtShares(c.total_shares)}</div>
+        </div>
+        <div class="stat-box dollars">
+          <div class="slabel">Value</div>
+          <div class="svalue">${formatDollars(c.total_dollars)}</div>
+        </div>
+      </div>
+      <div class="cluster-insiders">${insiderRows}</div>
+      <div style="margin-top:10px;font-size:11px;color:var(--muted)">Period: ${esc(c.date_range)}</div>
+    </div>`;
+  }
+
+  // ── Table ──
+  function filteredTxns() {
+    const q = document.getElementById('search-table').value.toLowerCase();
+    const str = document.getElementById('filter-table-strength').value;
+    // Build ticker→signal map
+    const tickerSignal = {};
+    allClusters.forEach(c => { tickerSignal[c.ticker] = c.signal_strength; });
+
+    let list = allTxns.filter(t => {
+      const matchQ = !q || (t.ticker||'').toLowerCase().includes(q) || (t.buyer_name||'').toLowerCase().includes(q) || (t.role||'').toLowerCase().includes(q) || (t.company||'').toLowerCase().includes(q);
+      const sig = tickerSignal[t.ticker] || '';
+      const matchStr = !str || sig === str;
+      return matchQ && matchStr;
+    });
+
+    const { col, dir } = tableSort;
+    list.sort((a, b) => {
+      const av = a[col] ?? '';
+      const bv = b[col] ?? '';
+      if (typeof av === 'number') return (av - bv) * dir;
+      return String(av).localeCompare(String(bv)) * dir;
+    });
+    return list;
+  }
+
+  function renderTable() {
+    const list = filteredTxns();
+    document.getElementById('table-count').textContent = list.length + ' transactions';
+    const tbody = document.getElementById('table-body');
+    if (!list.length) {
+      tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;padding:30px;color:var(--muted)">No transactions match your filters.</td></tr>';
+      return;
+    }
+    tbody.innerHTML = list.map(t => {
+      const acc = t.accession_no || '';
+      const edgarUrl = acc ? `https://www.sec.gov/Archives/edgar/data//${acc.replace(/-/g,'')}/` : '#';
+      return `<tr>
+        <td class="td-ticker">${esc(t.ticker || t.company || '—')}</td>
+        <td><strong>${esc(t.buyer_name)}</strong></td>
+        <td class="td-role">${esc(t.role)}</td>
+        <td>${esc(t.transaction_date)}</td>
+        <td>${t.shares.toLocaleString(undefined,{maximumFractionDigits:0})}</td>
+        <td class="td-dollars">${formatDollars(t.total_dollars)}</td>
+        <td>$${t.price_per_share.toFixed(2)}</td>
+        <td><a class="edgar-link" href="${edgarUrl}" target="_blank" rel="noopener">EDGAR ↗</a></td>
+      </tr>`;
+    }).join('');
+
+    // Update sort icons
+    document.querySelectorAll('th[data-col]').forEach(th => {
+      th.classList.toggle('sorted', th.dataset.col === tableSort.col);
+      const icon = th.querySelector('.sort-icon');
+      if (icon) icon.textContent = th.dataset.col === tableSort.col ? (tableSort.dir === 1 ? '↑' : '↓') : '↕';
+    });
+  }
+
+  // ── Detail panel ──
+  function openPanel(cluster) {
+    document.querySelectorAll('.cluster-card').forEach(el => el.classList.remove('active'));
+    const panelEl = document.getElementById('detail-panel');
+    panelEl.classList.add('open');
+    document.getElementById('panel-title').textContent = `${cluster.ticker || cluster.company} — Detail`;
+
+    const txnsHTML = cluster.transactions.map(t => {
+      const acc = t.accession_no || '';
+      const edgarUrl = acc ? `https://www.sec.gov/Archives/edgar/data//${acc.replace(/-/g,'')}/` : '#';
+      return `<div class="panel-txn">
+        <div class="ptop">
+          <div>
+            <div class="pname">${esc(t.buyer_name)}</div>
+            <div class="pmeta">${esc(t.role)} · ${esc(t.transaction_date)}</div>
+          </div>
+          <div class="pdollars">${formatDollars(t.total_dollars)}</div>
+        </div>
+        <div class="pmeta">${t.shares.toLocaleString(undefined,{maximumFractionDigits:0})} shares @ $${t.price_per_share.toFixed(2)}</div>
+        <div class="pmeta" style="margin-top:4px"><a class="edgar-link" href="${edgarUrl}" target="_blank" rel="noopener">View SEC Filing ↗</a></div>
+      </div>`;
+    }).join('');
+
+    document.getElementById('panel-body').innerHTML = `
+      <div class="panel-section">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <div>
+            <div style="font-size:13px;color:var(--muted)">${esc(cluster.company)}</div>
+            <div style="margin-top:4px"><span class="${badgeClass(cluster.signal_strength)}">${esc(cluster.signal_strength)}</span></div>
+          </div>
+        </div>
+        <div class="panel-stat-row">
+          <div class="pstat">
+            <div class="pl">Insiders</div>
+            <div class="pv">${cluster.insider_count}</div>
+          </div>
+          <div class="pstat">
+            <div class="pl">Shares</div>
+            <div class="pv">${fmtShares(cluster.total_shares)}</div>
+          </div>
+          <div class="pstat">
+            <div class="pl">Value</div>
+            <div class="pv" style="color:var(--accent);font-size:16px">${formatDollars(cluster.total_dollars)}</div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:16px">Date range: ${esc(cluster.date_range)}</div>
+      </div>
+      <div class="panel-section">
+        <h4>Individual Transactions</h4>
+        ${txnsHTML}
+      </div>`;
+  }
+
+  function closePanel() {
+    document.getElementById('detail-panel').classList.remove('open');
+    document.querySelectorAll('.cluster-card').forEach(el => el.classList.remove('active'));
+  }
+
+  // ── Utilities ──
+  function formatDollars(n) {
+    if (!n) return '$0';
+    if (n >= 1e9) return '$' + (n/1e9).toFixed(1) + 'B';
+    if (n >= 1e6) return '$' + (n/1e6).toFixed(1) + 'M';
+    if (n >= 1e3) return '$' + (n/1e3).toFixed(0) + 'K';
+    return '$' + n.toFixed(0);
+  }
+  function fmtShares(n) {
+    if (!n) return '0';
+    if (n >= 1e6) return (n/1e6).toFixed(1) + 'M';
+    if (n >= 1e3) return (n/1e3).toFixed(0) + 'K';
+    return n.toFixed(0);
+  }
+  function esc(s) {
+    return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ── Event listeners ──
+  ['search-clusters','filter-strength','sort-clusters'].forEach(id => {
+    document.getElementById(id).addEventListener('input', renderClusters);
+  });
+  ['search-table','filter-table-strength'].forEach(id => {
+    document.getElementById(id).addEventListener('input', renderTable);
+  });
+  document.querySelectorAll('th[data-col]').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.col;
+      tableSort.dir = tableSort.col === col ? -tableSort.dir : -1;
+      tableSort.col = col;
+      renderTable();
+    });
+  });
+
+  // ── Init ──
+  loadData();
+</script>
+</body>
+</html>
