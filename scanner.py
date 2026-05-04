@@ -115,22 +115,37 @@ def get_recent_form4_accessions(days_back: int = LOOKBACK_DAYS) -> list[dict]:
     start = 0
     page_size = 100
 
+    _max_retries = 3
+    _retry_base_delay = 5  # seconds; doubles each attempt (5, 10, 20)
+
     while True:
-        resp = requests.get(
-            "https://efts.sec.gov/LATEST/search-index",
-            params={
-                "forms": "4",
-                "dateRange": "custom",
-                "startdt": cutoff,
-                "hits.hits.total.value": "true",
-                "_source": "file_date,period_of_report,entity_name,accession_no",
-                "from": start,
-                "size": page_size,
-            },
-            headers=HEADERS,
-            timeout=30,
-        )
-        resp.raise_for_status()
+        resp = None
+        for attempt in range(_max_retries + 1):
+            try:
+                resp = requests.get(
+                    "https://efts.sec.gov/LATEST/search-index",
+                    params={
+                        "forms": "4",
+                        "dateRange": "custom",
+                        "startdt": cutoff,
+                        "hits.hits.total.value": "true",
+                        "_source": "file_date,period_of_report,entity_name,accession_no",
+                        "from": start,
+                        "size": page_size,
+                    },
+                    headers=HEADERS,
+                    timeout=30,
+                )
+                resp.raise_for_status()
+                break
+            except requests.RequestException as e:
+                if attempt < _max_retries:
+                    delay = _retry_base_delay * (2 ** attempt)
+                    print(f"  EDGAR error (attempt {attempt + 1}/{_max_retries}): {e} — retrying in {delay}s ...")
+                    time.sleep(delay)
+                else:
+                    print(f"  EDGAR API failed after {_max_retries} retries: {e}")
+                    return []
         data = resp.json()
         hits = data.get("hits", {}).get("hits", [])
         if not hits:
