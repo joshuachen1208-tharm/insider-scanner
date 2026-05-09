@@ -49,6 +49,7 @@ C_SUITE_KEYWORDS = {
 
 OUTPUT_JSON = "data/results.json"
 TOP_N_EMAIL = 3
+DEBUG_SAMPLES = 5  # print raw XML + parsed fields for first N successful fetches
 
 
 # ---------------------------------------------------------------------------
@@ -173,19 +174,13 @@ def get_recent_form4_accessions(days_back: int = LOOKBACK_DAYS) -> list[dict]:
 
 def fetch_filing_xml(accession_no: str) -> Optional[str]:
     """Download the primary XML document for a Form 4 accession."""
-    # accession format: 0001234567-24-000001 → path 0001234567/24/000001
     clean = accession_no.replace("-", "")
     cik_part = clean[:10]
-    rest = clean[10:]
-    path = f"{cik_part}/{rest[:2]}/{rest[2:]}"
+    cik_int = int(cik_part)
+    acc_nodash = clean  # e.g. 000123456724000001
 
-    index_url = f"{EDGAR_FULL}/Archives/edgar/data/{int(cik_part)}/{accession_no.replace('-','')}/{accession_no}-index.htm"
-
-    # Try the filing index to find the XML document name
-    idx_url = f"{EDGAR_FULL}/cgi-bin/browse-edgar?action=getcompany&CIK={int(cik_part)}&type=4&dateb=&owner=include&count=1&search_text="
-
-    # Direct XML path pattern used by EDGAR
-    xml_url = f"{EDGAR_FULL}/Archives/edgar/data/{int(cik_part)}/{accession_no.replace('-','')}/{accession_no}.xml"
+    # Primary guess: {accession_no}.xml
+    xml_url = f"{EDGAR_FULL}/Archives/edgar/data/{cik_int}/{acc_nodash}/{accession_no}.xml"
     try:
         resp = requests.get(xml_url, headers=HEADERS, timeout=15)
         if resp.status_code == 200 and "<ownershipDocument>" in resp.text:
@@ -193,37 +188,44 @@ def fetch_filing_xml(accession_no: str) -> Optional[str]:
     except requests.RequestException:
         pass
 
-    # Fallback: scrape index page for XML link
-    try:
-        idx_resp = requests.get(
-            f"{EDGAR_FULL}/Archives/edgar/data/{int(cik_part)}/{accession_no.replace('-','')}/",
-            headers=HEADERS,
-            timeout=15,
-        )
-        if idx_resp.status_code == 200:
-            # find .xml links
+    # Fallback: parse filing index page to find the correct XML filename
+    for idx_suffix in (f"{accession_no}-index.htm", f"{accession_no}-index.html", ""):
+        idx_url = f"{EDGAR_FULL}/Archives/edgar/data/{cik_int}/{acc_nodash}/{idx_suffix}"
+        try:
+            idx_resp = requests.get(idx_url, headers=HEADERS, timeout=15)
+            if idx_resp.status_code != 200:
+                continue
+            # Collect all .xml hrefs, prefer those containing "ownershipDocument" hint
+            xml_candidates = []
             for line in idx_resp.text.splitlines():
-                match = re.search(r'href="([^"]+\.xml)"', line, re.IGNORECASE)
-                if match:
-                    xml_path = match.group(1)
-                    full = f"{EDGAR_FULL}{xml_path}" if xml_path.startswith("/") else f"{EDGAR_FULL}/Archives/edgar/data/{int(cik_part)}/{accession_no.replace('-','')}/{xml_path}"
-                    r2 = requests.get(full, headers=HEADERS, timeout=15)
-                    if r2.status_code == 200:
+                m = re.search(r'href="([^"]+\.xml)"', line, re.IGNORECASE)
+                if m:
+                    href = m.group(1)
+                    full = f"{EDGAR_FULL}{href}" if href.startswith("/") else f"{EDGAR_FULL}/Archives/edgar/data/{cik_int}/{acc_nodash}/{href}"
+                    xml_candidates.append(full)
+            for url in xml_candidates:
+                try:
+                    r2 = requests.get(url, headers=HEADERS, timeout=15)
+                    if r2.status_code == 200 and "<ownershipDocument>" in r2.text:
                         return r2.text
-    except requests.RequestException:
-        pass
+                except requests.RequestException:
+                    continue
+            if xml_candidates:
+                break  # tried the index page, don't loop further
+        except requests.RequestException:
+            continue
 
     return None
 
 
-def parse_form4(xml_text: str, meta: dict) -> list[dict]:
+def parse_form4(xml_text: str, meta: dict, debug: bool = False) -> list[dict]:
     """Parse Form 4 XML and return list of transaction records."""
     try:
         root = ET.fromstring(xml_text)
-    except ET.ParseError:
+    except ET.ParseError as e:
+        if debug:
+            print(f"  [parse] XML parse error: {e}")
         return []
-
-    ns = ""  # Form 4 XML has no namespace
 
     def find_text(element, path):
         el = element.find(path)
@@ -234,63 +236,79 @@ def parse_form4(xml_text: str, meta: dict) -> list[dict]:
     ticker = find_text(issuer, "issuerTradingSymbol") if issuer is not None else ""
     company = find_text(issuer, "issuerName") if issuer is not None else meta.get("entity_name", "")
 
-    # Reporting owner info
-    owner_el = root.find("reportingOwner")
-    if owner_el is None:
+    # Reporting owner — Form 4 can have multiple; iterate all
+    all_owner_els = root.findall("reportingOwner")
+    if not all_owner_els:
+        if debug:
+            print(f"  [parse] no <reportingOwner> found in {meta.get('accession_no','?')}")
         return []
-    owner_id = owner_el.find("reportingOwnerId")
-    owner_rel = owner_el.find("reportingOwnerRelationship")
-
-    buyer_name = ""
-    if owner_id is not None:
-        buyer_name = find_text(owner_id, "rptOwnerName")
-
-    role = ""
-    if owner_rel is not None:
-        is_director = find_text(owner_rel, "isDirector") == "1"
-        is_officer = find_text(owner_rel, "isOfficerDirector") == "1" or find_text(owner_rel, "isOfficer") == "1"
-        officer_title = find_text(owner_rel, "officerTitle")
-        if is_director:
-            role = officer_title or "Director"
-        elif is_officer:
-            role = officer_title or "Officer"
-        else:
-            role = officer_title
-
-    if not is_c_suite(role):
-        return []  # skip non-C-suite / non-director
 
     records = []
-    # Non-derivative transactions
-    for txn in root.findall(".//nonDerivativeTransaction"):
-        code = find_text(txn, "transactionCoding/transactionCode")
-        if code != "P":  # open-market purchase only
+    for owner_el in all_owner_els:
+        owner_id = owner_el.find("reportingOwnerId")
+        owner_rel = owner_el.find("reportingOwnerRelationship")
+
+        buyer_name = ""
+        if owner_id is not None:
+            buyer_name = find_text(owner_id, "rptOwnerName")
+
+        role = ""
+        if owner_rel is not None:
+            is_director = find_text(owner_rel, "isDirector") == "1"
+            is_officer = find_text(owner_rel, "isOfficer") == "1"
+            officer_title = find_text(owner_rel, "officerTitle")
+            if is_director and is_officer:
+                role = officer_title or "Director/Officer"
+            elif is_director:
+                role = officer_title or "Director"
+            elif is_officer:
+                role = officer_title or "Officer"
+            elif officer_title:
+                # Flag set to 0 but title is filled — trust the title
+                role = officer_title
+
+        if debug:
+            print(f"  [parse] owner={buyer_name!r:40s}  role={role!r}")
+
+        if not is_c_suite(role):
+            if debug:
+                print(f"           → skipped (not C-suite/director)")
             continue
 
-        shares_str = find_text(txn, "transactionAmounts/transactionShares/value")
-        price_str = find_text(txn, "transactionAmounts/transactionPricePerShare/value")
-        date_str = find_text(txn, "transactionDate/value") or meta.get("period_of_report", "")
+        # Non-derivative transactions
+        all_txn_codes = []
+        for txn in root.findall(".//nonDerivativeTransaction"):
+            code = find_text(txn, "transactionCoding/transactionCode")
+            all_txn_codes.append(code)
+            if code != "P":  # open-market purchase only
+                continue
 
-        shares = safe_float(shares_str)
-        price = safe_float(price_str)
-        dollars = shares * price
+            shares_str = find_text(txn, "transactionAmounts/transactionShares/value")
+            price_str  = find_text(txn, "transactionAmounts/transactionPricePerShare/value")
+            date_str   = find_text(txn, "transactionDate/value") or meta.get("period_of_report", "")
+            security   = find_text(txn, "securityTitle/value")
 
-        security = find_text(txn, "securityTitle/value")
+            shares  = safe_float(shares_str)
+            price   = safe_float(price_str)
+            dollars = shares * price
 
-        records.append({
-            "ticker": ticker,
-            "company": company,
-            "buyer_name": buyer_name,
-            "role": role,
-            "transaction_date": date_str,
-            "file_date": meta.get("file_date", ""),
-            "shares": shares,
-            "price_per_share": price,
-            "total_dollars": dollars,
-            "security": security,
-            "accession_no": meta.get("accession_no", ""),
-            "transaction_code": code,
-        })
+            records.append({
+                "ticker": ticker,
+                "company": company,
+                "buyer_name": buyer_name,
+                "role": role,
+                "transaction_date": date_str,
+                "file_date": meta.get("file_date", ""),
+                "shares": shares,
+                "price_per_share": price,
+                "total_dollars": dollars,
+                "security": security,
+                "accession_no": meta.get("accession_no", ""),
+                "transaction_code": code,
+            })
+
+        if debug:
+            print(f"           → txn codes found: {all_txn_codes or '(none)'}, P-purchases added: {sum(1 for r in records if r['buyer_name'] == buyer_name)}")
 
     return records
 
@@ -485,17 +503,38 @@ def main():
 
     # 2. Parse each filing
     all_transactions = []
+    xml_fetched = 0
+    xml_failed  = 0
+    debug_count = 0
+
     for i, meta in enumerate(accessions):
         if i % 50 == 0:
             print(f"  Parsing filing {i+1}/{len(accessions)} ...")
         xml_text = fetch_filing_xml(meta["accession_no"])
         if not xml_text:
+            xml_failed += 1
             continue
-        txns = parse_form4(xml_text, meta)
+        xml_fetched += 1
+
+        is_debug_sample = debug_count < DEBUG_SAMPLES
+        if is_debug_sample:
+            debug_count += 1
+            print(f"\n{'='*60}")
+            print(f"DEBUG SAMPLE {debug_count}: accession={meta['accession_no']}")
+            print(f"  entity={meta.get('entity_name','?')}  file_date={meta.get('file_date','?')}")
+            print(f"  XML snippet (first 800 chars):")
+            print(xml_text[:800])
+            print()
+
+        txns = parse_form4(xml_text, meta, debug=is_debug_sample)
+        if is_debug_sample:
+            print(f"  → parse_form4 returned {len(txns)} record(s)")
+            print(f"{'='*60}\n")
         all_transactions.extend(txns)
         time.sleep(0.12)  # SEC rate limit: ~10 req/s
 
-    print(f"\nFound {len(all_transactions)} open-market C-suite/director purchases")
+    print(f"\nXML fetch stats: {xml_fetched} succeeded, {xml_failed} failed/not-found")
+    print(f"Found {len(all_transactions)} open-market C-suite/director purchases")
 
     # 3. Cluster
     clusters = cluster_transactions(all_transactions)
