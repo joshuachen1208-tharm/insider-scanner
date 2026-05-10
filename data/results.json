@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-09T14:58:58.642757+00:00",
+  "generated_at": "2026-05-10T14:56:56.325595+00:00",
   "lookback_days": 3,
   "cluster_window_days": 5,
-  "total_transactions": 149,
+  "total_transactions": 156,
   "total_clusters": 6,
   "clusters": [
     {
@@ -955,7 +955,7 @@
     {
       "ticker": "BOTJ",
       "company": "BANK OF THE JAMES FINANCIAL GROUP INC",
-      "insider_count": 2,
+      "insider_count": 3,
       "insiders": [
         {
           "name": "JAMERSON PHILLIP C",
@@ -965,6 +965,13 @@
           "date": "2026-05-07"
         },
         {
+          "name": "BRYANT WILLIAM C III",
+          "role": "Director",
+          "shares": 1043.0,
+          "dollars": 24103.73,
+          "date": "2026-05-06"
+        },
+        {
           "name": "ADDISON LEWIS C",
           "role": "Director",
           "shares": 82.0,
@@ -972,9 +979,9 @@
           "date": "2026-05-07"
         }
       ],
-      "total_shares": 1082.0,
-      "total_dollars": 25297.249999999996,
-      "date_range": "2026-05-07 \u2013 2026-05-07",
+      "total_shares": 2125.0,
+      "total_dollars": 49400.979999999996,
+      "date_range": "2026-05-06 \u2013 2026-05-07",
       "transactions": [
         {
           "ticker": "BOTJ",
@@ -993,6 +1000,20 @@
         {
           "ticker": "BOTJ",
           "company": "BANK OF THE JAMES FINANCIAL GROUP INC",
+          "buyer_name": "BRYANT WILLIAM C III",
+          "role": "Director",
+          "transaction_date": "2026-05-06",
+          "file_date": "2026-05-07",
+          "shares": 1043.0,
+          "price_per_share": 23.11,
+          "total_dollars": 24103.73,
+          "security": "Common Stock, Par Value 2.14",
+          "accession_no": "0001437749-26-015552-rdgdoc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "BOTJ",
+          "company": "BANK OF THE JAMES FINANCIAL GROUP INC",
           "buyer_name": "ADDISON LEWIS C",
           "role": "Director",
           "transaction_date": "2026-05-07",
@@ -1005,7 +1026,7 @@
           "transaction_code": "P"
         }
       ],
-      "signal_strength": "WEAK"
+      "signal_strength": "MODERATE"
     }
   ],
   "all_transactions": [
@@ -1332,6 +1353,20 @@
       "transaction_code": "P"
     },
     {
+      "ticker": "RVSB",
+      "company": "RIVERVIEW BANCORP INC",
+      "buyer_name": "Sherman Nicole",
+      "role": "President/CEO",
+      "transaction_date": "2026-05-07",
+      "file_date": "2026-05-08",
+      "shares": 1800.0,
+      "price_per_share": 5.4867,
+      "total_dollars": 9876.06,
+      "security": "Common Stock",
+      "accession_no": "0001322325-26-000002-form4-05082026_050546.xml",
+      "transaction_code": "P"
+    },
+    {
       "ticker": "COE",
       "company": "51Talk Online Education Group",
       "buyer_name": "Huang Jack Jiajia",
@@ -1444,20 +1479,6 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "RVSB",
-      "company": "RIVERVIEW BANCORP INC",
-      "buyer_name": "Sherman Nicole",
-      "role": "President/CEO",
-      "transaction_date": "2026-05-07",
-      "file_date": "2026-05-08",
-      "shares": 1800.0,
-      "price_per_share": 5.4867,
-      "total_dollars": 9876.06,
-      "security": "Common Stock",
-      "accession_no": "0001322325-26-000002-form4-05082026_050546.xml",
-      "transaction_code": "P"
-    },
-    {
       "ticker": "SITE",
       "company": "SiteOne Landscape Supply, Inc.",
       "buyer_name": "Laughlin Daniel T.",
@@ -1511,6 +1532,34 @@
       "total_dollars": 56220.0,
       "security": "Class A Common Stock",
       "accession_no": "0001193125-26-215194-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "NEWT",
+      "company": "NewtekOne, Inc.",
+      "buyer_name": "SALUTE RICHARD J",
+      "role": "Director",
+      "transaction_date": "2026-05-07",
+      "file_date": "2026-05-08",
+      "shares": 1000.0,
+      "price_per_share": 13.4699,
+      "total_dollars": 13469.900000000001,
+      "security": "Common stock",
+      "accession_no": "0001235974-26-000002-wk-form4_1778247389.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "NEWT",
+      "company": "NewtekOne, Inc.",
+      "buyer_name": "SALUTE RICHARD J",
+      "role": "Director",
+      "transaction_date": "2026-05-07",
+      "file_date": "2026-05-08",
+      "shares": 1000.0,
+      "price_per_share": 13.4699,
+      "total_dollars": 13469.900000000001,
+      "security": "Common stock",
+      "accession_no": "0001235974-26-000002-wk-form4_1778247389.xml",
       "transaction_code": "P"
     },
     {
@@ -1623,6 +1672,34 @@
       "total_dollars": 28665.359999999997,
       "security": "Common Stock",
       "accession_no": "0001193125-26-211996-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "ANGX",
+      "company": "Angel Studios, Inc.",
+      "buyer_name": "Sarowitz Steven I",
+      "role": "Director",
+      "transaction_date": "2026-05-05",
+      "file_date": "2026-05-07",
+      "shares": 321544.0,
+      "price_per_share": 3.0558,
+      "total_dollars": 982574.1552,
+      "security": "Class A Common Stock, par value $0.0001 per share",
+      "accession_no": "0001865200-26-000038-form4.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "BOTJ",
+      "company": "BANK OF THE JAMES FINANCIAL GROUP INC",
+      "buyer_name": "BRYANT WILLIAM C III",
+      "role": "Director",
+      "transaction_date": "2026-05-06",
+      "file_date": "2026-05-07",
+      "shares": 1043.0,
+      "price_per_share": 23.11,
+      "total_dollars": 24103.73,
+      "security": "Common Stock, Par Value 2.14",
+      "accession_no": "0001437749-26-015552-rdgdoc.xml",
       "transaction_code": "P"
     },
     {
@@ -1945,6 +2022,48 @@
       "total_dollars": 23750.0,
       "security": "common stock, par value $0.01",
       "accession_no": "0001193125-26-212504-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "PDT",
+      "company": "JOHN HANCOCK PREMIUM DIVIDEND FUND",
+      "buyer_name": "Hurtsellers Christine",
+      "role": "Director",
+      "transaction_date": "2026-05-06",
+      "file_date": "2026-05-07",
+      "shares": 472.0,
+      "price_per_share": 13.1448,
+      "total_dollars": 6204.3456,
+      "security": "Common Shares of Beneficial Interest",
+      "accession_no": "0001481859-26-000001-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "PDT",
+      "company": "JOHN HANCOCK PREMIUM DIVIDEND FUND",
+      "buyer_name": "Hurtsellers Christine",
+      "role": "Director",
+      "transaction_date": "2026-05-06",
+      "file_date": "2026-05-07",
+      "shares": 440.0,
+      "price_per_share": 13.1448,
+      "total_dollars": 5783.712,
+      "security": "Common Shares of Beneficial Interest",
+      "accession_no": "0001481859-26-000001-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "PDT",
+      "company": "JOHN HANCOCK PREMIUM DIVIDEND FUND",
+      "buyer_name": "Hurtsellers Christine",
+      "role": "Director",
+      "transaction_date": "2026-05-06",
+      "file_date": "2026-05-07",
+      "shares": 0.908,
+      "price_per_share": 13.15,
+      "total_dollars": 11.9402,
+      "security": "Common Shares of Beneficial Interest",
+      "accession_no": "0001481859-26-000001-primary_doc.xml",
       "transaction_code": "P"
     },
     {
@@ -2522,20 +2641,6 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "ASRV",
-      "company": "AMERISERV FINANCIAL INC /PA/",
-      "buyer_name": "STOPKO JEFFREY A",
-      "role": "President & CEO ASRV & Bank",
-      "transaction_date": "2026-05-05",
-      "file_date": "2026-05-06",
-      "shares": 3000.0,
-      "price_per_share": 3.85,
-      "total_dollars": 11550.0,
-      "security": "Common Stock",
-      "accession_no": "0000707605-26-000017-form4.xml",
-      "transaction_code": "P"
-    },
-    {
       "ticker": "SVRE",
       "company": "SaverOne 2014 Ltd.",
       "buyer_name": "VisionWave Holdings, Inc.",
@@ -2561,6 +2666,20 @@
       "total_dollars": 1834790400.0,
       "security": "Ordinary Shares",
       "accession_no": "0001731122-26-000677-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "ASRV",
+      "company": "AMERISERV FINANCIAL INC /PA/",
+      "buyer_name": "STOPKO JEFFREY A",
+      "role": "President & CEO ASRV & Bank",
+      "transaction_date": "2026-05-05",
+      "file_date": "2026-05-06",
+      "shares": 3000.0,
+      "price_per_share": 3.85,
+      "total_dollars": 11550.0,
+      "security": "Common Stock",
+      "accession_no": "0000707605-26-000017-form4.xml",
       "transaction_code": "P"
     },
     {
