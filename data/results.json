@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-16T15:07:04.571948+00:00",
+  "generated_at": "2026-05-17T15:03:03.475858+00:00",
   "lookback_days": 3,
   "cluster_window_days": 5,
-  "total_transactions": 252,
+  "total_transactions": 253,
   "total_clusters": 24,
   "clusters": [
     {
@@ -3694,34 +3694,6 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "HDSN",
-      "company": "HUDSON TECHNOLOGIES INC /NY",
-      "buyer_name": "Parrillo Richard",
-      "role": "Director",
-      "transaction_date": "2026-05-14",
-      "file_date": "2026-05-15",
-      "shares": 3600.0,
-      "price_per_share": 4.96,
-      "total_dollars": 17856.0,
-      "security": "Common Stock",
-      "accession_no": "0000925528-26-000045-form4.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "HDSN",
-      "company": "HUDSON TECHNOLOGIES INC /NY",
-      "buyer_name": "Parrillo Richard",
-      "role": "Director",
-      "transaction_date": "2026-05-14",
-      "file_date": "2026-05-15",
-      "shares": 1400.0,
-      "price_per_share": 4.97,
-      "total_dollars": 6958.0,
-      "security": "Common Stock",
-      "accession_no": "0000925528-26-000045-form4.xml",
-      "transaction_code": "P"
-    },
-    {
       "ticker": "CRCW",
       "company": "Crypto Co",
       "buyer_name": "Levy Ron",
@@ -3747,6 +3719,34 @@
       "total_dollars": 22159.5,
       "security": "Common Stock",
       "accession_no": "0001140361-26-021671-form4.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "HDSN",
+      "company": "HUDSON TECHNOLOGIES INC /NY",
+      "buyer_name": "Parrillo Richard",
+      "role": "Director",
+      "transaction_date": "2026-05-14",
+      "file_date": "2026-05-15",
+      "shares": 3600.0,
+      "price_per_share": 4.96,
+      "total_dollars": 17856.0,
+      "security": "Common Stock",
+      "accession_no": "0000925528-26-000045-form4.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "HDSN",
+      "company": "HUDSON TECHNOLOGIES INC /NY",
+      "buyer_name": "Parrillo Richard",
+      "role": "Director",
+      "transaction_date": "2026-05-14",
+      "file_date": "2026-05-15",
+      "shares": 1400.0,
+      "price_per_share": 4.97,
+      "total_dollars": 6958.0,
+      "security": "Common Stock",
+      "accession_no": "0000925528-26-000045-form4.xml",
       "transaction_code": "P"
     },
     {
@@ -4016,20 +4016,6 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "TTEK",
-      "company": "TETRA TECH INC",
-      "buyer_name": "Feeler Jeffrey R",
-      "role": "Director",
-      "transaction_date": "2026-05-15",
-      "file_date": "2026-05-15",
-      "shares": 1900.0,
-      "price_per_share": 26.41,
-      "total_dollars": 50179.0,
-      "security": "COMMON STOCK",
-      "accession_no": "0001369458-26-000006-wk-form4_1778880973.xml",
-      "transaction_code": "P"
-    },
-    {
       "ticker": "WEST",
       "company": "Westrock Coffee Co",
       "buyer_name": "FORD JOE T",
@@ -4083,6 +4069,20 @@
       "total_dollars": 127500.0,
       "security": "COMMON STOCK",
       "accession_no": "0001176401-26-000003-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "TTEK",
+      "company": "TETRA TECH INC",
+      "buyer_name": "Feeler Jeffrey R",
+      "role": "Director",
+      "transaction_date": "2026-05-15",
+      "file_date": "2026-05-15",
+      "shares": 1900.0,
+      "price_per_share": 26.41,
+      "total_dollars": 50179.0,
+      "security": "COMMON STOCK",
+      "accession_no": "0001369458-26-000006-wk-form4_1778880973.xml",
       "transaction_code": "P"
     },
     {
@@ -4380,20 +4380,6 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "AVBC",
-      "company": "Avidia Bancorp, Inc.",
-      "buyer_name": "Cozzone Robert D",
-      "role": "President & CEO",
-      "transaction_date": "2026-05-13",
-      "file_date": "2026-05-15",
-      "shares": 2023.0,
-      "price_per_share": 19.7678,
-      "total_dollars": 39990.2594,
-      "security": "Common Stock",
-      "accession_no": "0001437749-26-017313-rdgdoc.xml",
-      "transaction_code": "P"
-    },
-    {
       "ticker": "VTSI",
       "company": "VirTra, Inc",
       "buyer_name": "Boudreau Alanna",
@@ -4405,6 +4391,20 @@
       "total_dollars": 16799.5,
       "security": "Common Stock",
       "accession_no": "0001493152-26-023756-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "AVBC",
+      "company": "Avidia Bancorp, Inc.",
+      "buyer_name": "Cozzone Robert D",
+      "role": "President & CEO",
+      "transaction_date": "2026-05-13",
+      "file_date": "2026-05-15",
+      "shares": 2023.0,
+      "price_per_share": 19.7678,
+      "total_dollars": 39990.2594,
+      "security": "Common Stock",
+      "accession_no": "0001437749-26-017313-rdgdoc.xml",
       "transaction_code": "P"
     },
     {
@@ -4685,6 +4685,20 @@
       "total_dollars": 1680496.7500000002,
       "security": "COMMON STOCK",
       "accession_no": "0001213900-26-056877-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "BSM",
+      "company": "Black Stone Minerals, L.P.",
+      "buyer_name": "Carter Thomas L Jr",
+      "role": "Executive Chairman",
+      "transaction_date": "2026-05-13",
+      "file_date": "2026-05-14",
+      "shares": 1120.0,
+      "price_per_share": 13.4999,
+      "total_dollars": 15119.888,
+      "security": "Common units representing limited partner interests",
+      "accession_no": "0001319960-26-000012-wk-form4_1778792541.xml",
       "transaction_code": "P"
     },
     {
@@ -5878,6 +5892,20 @@
       "transaction_code": "P"
     },
     {
+      "ticker": "GRNT",
+      "company": "Granite Ridge Resources, Inc.",
+      "buyer_name": "Everard Michele J",
+      "role": "Director",
+      "transaction_date": "2026-05-14",
+      "file_date": "2026-05-14",
+      "shares": 1000.0,
+      "price_per_share": 5.28,
+      "total_dollars": 5280.0,
+      "security": "Common Stock, par value $0.0001 per share",
+      "accession_no": "0001628280-26-035006-wk-form4_1778786149.xml",
+      "transaction_code": "P"
+    },
+    {
       "ticker": "AIJTY",
       "company": "Jianpu Technology Inc.",
       "buyer_name": "Lu Jiayan",
@@ -5959,20 +5987,6 @@
       "total_dollars": 165000.01075,
       "security": "Class Z Shares",
       "accession_no": "0002074666-26-000004-form4-05142026_070557.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "GRNT",
-      "company": "Granite Ridge Resources, Inc.",
-      "buyer_name": "Everard Michele J",
-      "role": "Director",
-      "transaction_date": "2026-05-14",
-      "file_date": "2026-05-14",
-      "shares": 1000.0,
-      "price_per_share": 5.28,
-      "total_dollars": 5280.0,
-      "security": "Common Stock, par value $0.0001 per share",
-      "accession_no": "0001628280-26-035006-wk-form4_1778786149.xml",
       "transaction_code": "P"
     },
     {
