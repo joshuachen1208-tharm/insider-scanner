@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-24T15:14:29.464235+00:00",
+  "generated_at": "2026-05-26T19:54:15.903198+00:00",
   "lookback_days": 3,
   "cluster_window_days": 5,
-  "total_transactions": 124,
-  "total_clusters": 7,
+  "total_transactions": 133,
+  "total_clusters": 6,
   "clusters": [
     {
       "ticker": "APCX",
@@ -124,91 +124,29 @@
       "signal_strength": "STRONG"
     },
     {
-      "ticker": "BRCB",
-      "company": "Black Rock Coffee Bar, Inc.",
-      "insider_count": 2,
-      "insiders": [
-        {
-          "name": "Geyer Clay Howard",
-          "role": "Chief Operating Officer",
-          "shares": 45080.0,
-          "dollars": 293470.8,
-          "date": "2026-05-21"
-        },
-        {
-          "name": "Geyer Clay Howard",
-          "role": "Chief Operating Officer",
-          "shares": 925.0,
-          "dollars": 6345.5,
-          "date": "2026-05-22"
-        },
-        {
-          "name": "Schmidt Michael Ryan",
-          "role": "Principal Accounting Officer",
-          "shares": 7100.0,
-          "dollars": 49558.0,
-          "date": "2026-05-20"
-        }
-      ],
-      "total_shares": 53105.0,
-      "total_dollars": 349374.3,
-      "date_range": "2026-05-20 \u2013 2026-05-22",
-      "transactions": [
-        {
-          "ticker": "BRCB",
-          "company": "Black Rock Coffee Bar, Inc.",
-          "buyer_name": "Geyer Clay Howard",
-          "role": "Chief Operating Officer",
-          "transaction_date": "2026-05-21",
-          "file_date": "2026-05-22",
-          "shares": 45080.0,
-          "price_per_share": 6.51,
-          "total_dollars": 293470.8,
-          "security": "Class A Common Stock",
-          "accession_no": "0001628280-26-037910-wk-form4_1779500519.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "BRCB",
-          "company": "Black Rock Coffee Bar, Inc.",
-          "buyer_name": "Geyer Clay Howard",
-          "role": "Chief Operating Officer",
-          "transaction_date": "2026-05-22",
-          "file_date": "2026-05-22",
-          "shares": 925.0,
-          "price_per_share": 6.86,
-          "total_dollars": 6345.5,
-          "security": "Class A Common Stock",
-          "accession_no": "0001628280-26-037910-wk-form4_1779500519.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "BRCB",
-          "company": "Black Rock Coffee Bar, Inc.",
-          "buyer_name": "Schmidt Michael Ryan",
-          "role": "Principal Accounting Officer",
-          "transaction_date": "2026-05-20",
-          "file_date": "2026-05-21",
-          "shares": 7100.0,
-          "price_per_share": 6.98,
-          "total_dollars": 49558.0,
-          "security": "Class A Common Stock",
-          "accession_no": "0001628280-26-037459-wk-form4_1779403020.xml",
-          "transaction_code": "P"
-        }
-      ],
-      "signal_strength": "STRONG"
-    },
-    {
       "ticker": "BSX",
       "company": "BOSTON SCIENTIFIC CORP",
-      "insider_count": 2,
+      "insider_count": 3,
       "insiders": [
         {
           "name": "LUDWIG EDWARD J",
           "role": "Director",
           "shares": 3580.0,
           "dollars": 202914.4,
+          "date": "2026-05-20"
+        },
+        {
+          "name": "Habiger David C",
+          "role": "Director",
+          "shares": 2200.0,
+          "dollars": 125279.21999999999,
+          "date": "2026-05-19"
+        },
+        {
+          "name": "Habiger David C",
+          "role": "Director",
+          "shares": 2250.0,
+          "dollars": 125818.875,
           "date": "2026-05-20"
         },
         {
@@ -219,9 +157,9 @@
           "date": "2026-05-20"
         }
       ],
-      "total_shares": 5350.0,
-      "total_dollars": 302901.7,
-      "date_range": "2026-05-20 \u2013 2026-05-20",
+      "total_shares": 9800.0,
+      "total_dollars": 553999.7949999999,
+      "date_range": "2026-05-19 \u2013 2026-05-20",
       "transactions": [
         {
           "ticker": "BSX",
@@ -240,6 +178,34 @@
         {
           "ticker": "BSX",
           "company": "BOSTON SCIENTIFIC CORP",
+          "buyer_name": "Habiger David C",
+          "role": "Director",
+          "transaction_date": "2026-05-19",
+          "file_date": "2026-05-21",
+          "shares": 2200.0,
+          "price_per_share": 56.9451,
+          "total_dollars": 125279.21999999999,
+          "security": "Common Stock",
+          "accession_no": "0001225208-26-005546-doc4.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "BSX",
+          "company": "BOSTON SCIENTIFIC CORP",
+          "buyer_name": "Habiger David C",
+          "role": "Director",
+          "transaction_date": "2026-05-20",
+          "file_date": "2026-05-21",
+          "shares": 2250.0,
+          "price_per_share": 55.9195,
+          "total_dollars": 125818.875,
+          "security": "Common Stock",
+          "accession_no": "0001225208-26-005546-doc4.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "BSX",
+          "company": "BOSTON SCIENTIFIC CORP",
           "buyer_name": "Pegus Cheryl",
           "role": "Director",
           "transaction_date": "2026-05-20",
@@ -252,7 +218,7 @@
           "transaction_code": "P"
         }
       ],
-      "signal_strength": "MODERATE"
+      "signal_strength": "STRONG"
     },
     {
       "ticker": "STEX",
@@ -352,137 +318,6 @@
       "signal_strength": "STRONG"
     },
     {
-      "ticker": "DBD",
-      "company": "DIEBOLD NIXDORF, Inc",
-      "insider_count": 2,
-      "insiders": [
-        {
-          "name": "Myers Jonathan",
-          "role": "EVP, Chief Revenue Officer",
-          "shares": 1360.0,
-          "dollars": 99837.59999999999,
-          "date": "2026-05-22"
-        },
-        {
-          "name": "Timko Thomas S",
-          "role": "EVP, CFO",
-          "shares": 672.0,
-          "dollars": 49969.92,
-          "date": "2026-05-22"
-        }
-      ],
-      "total_shares": 2032.0,
-      "total_dollars": 149807.52,
-      "date_range": "2026-05-22 \u2013 2026-05-22",
-      "transactions": [
-        {
-          "ticker": "DBD",
-          "company": "DIEBOLD NIXDORF, Inc",
-          "buyer_name": "Myers Jonathan",
-          "role": "EVP, Chief Revenue Officer",
-          "transaction_date": "2026-05-22",
-          "file_date": "2026-05-22",
-          "shares": 1360.0,
-          "price_per_share": 73.41,
-          "total_dollars": 99837.59999999999,
-          "security": "Common Stock",
-          "accession_no": "0001944597-26-000007-wk-form4_1779487486.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "DBD",
-          "company": "DIEBOLD NIXDORF, Inc",
-          "buyer_name": "Timko Thomas S",
-          "role": "EVP, CFO",
-          "transaction_date": "2026-05-22",
-          "file_date": "2026-05-22",
-          "shares": 672.0,
-          "price_per_share": 74.36,
-          "total_dollars": 49969.92,
-          "security": "Common Stock",
-          "accession_no": "0001368469-26-000006-wk-form4_1779487496.xml",
-          "transaction_code": "P"
-        }
-      ],
-      "signal_strength": "WEAK"
-    },
-    {
-      "ticker": "ROCK",
-      "company": "GIBRALTAR INDUSTRIES, INC.",
-      "insider_count": 2,
-      "insiders": [
-        {
-          "name": "Bolanowski Katherine",
-          "role": "General Counsel, VP, Secretary",
-          "shares": 1256.0,
-          "dollars": 44751.280000000006,
-          "date": "2026-05-21"
-        },
-        {
-          "name": "Bolanowski Katherine",
-          "role": "General Counsel, VP, Secretary",
-          "shares": 144.0,
-          "dollars": 5135.039999999999,
-          "date": "2026-05-21"
-        },
-        {
-          "name": "Lovechio Joseph A",
-          "role": "VP and CFO",
-          "shares": 1000.0,
-          "dollars": 34615.0,
-          "date": "2026-05-20"
-        }
-      ],
-      "total_shares": 2400.0,
-      "total_dollars": 84501.32,
-      "date_range": "2026-05-20 \u2013 2026-05-21",
-      "transactions": [
-        {
-          "ticker": "ROCK",
-          "company": "GIBRALTAR INDUSTRIES, INC.",
-          "buyer_name": "Bolanowski Katherine",
-          "role": "General Counsel, VP, Secretary",
-          "transaction_date": "2026-05-21",
-          "file_date": "2026-05-22",
-          "shares": 1256.0,
-          "price_per_share": 35.63,
-          "total_dollars": 44751.280000000006,
-          "security": "Common Stock",
-          "accession_no": "0000912562-26-000120-form4.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "ROCK",
-          "company": "GIBRALTAR INDUSTRIES, INC.",
-          "buyer_name": "Bolanowski Katherine",
-          "role": "General Counsel, VP, Secretary",
-          "transaction_date": "2026-05-21",
-          "file_date": "2026-05-22",
-          "shares": 144.0,
-          "price_per_share": 35.66,
-          "total_dollars": 5135.039999999999,
-          "security": "Common Stock",
-          "accession_no": "0000912562-26-000120-form4.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "ROCK",
-          "company": "GIBRALTAR INDUSTRIES, INC.",
-          "buyer_name": "Lovechio Joseph A",
-          "role": "VP and CFO",
-          "transaction_date": "2026-05-20",
-          "file_date": "2026-05-21",
-          "shares": 1000.0,
-          "price_per_share": 34.615,
-          "total_dollars": 34615.0,
-          "security": "Common Stock",
-          "accession_no": "0000912562-26-000118-form4.xml",
-          "transaction_code": "P"
-        }
-      ],
-      "signal_strength": "WEAK"
-    },
-    {
       "ticker": "NONE",
       "company": "AB Commercial Real Estate Private Debt Fund, LLC",
       "insider_count": 3,
@@ -557,9 +392,357 @@
         }
       ],
       "signal_strength": "MODERATE"
+    },
+    {
+      "ticker": "IPM",
+      "company": "INTELLIGENT PROTECTION MANAGEMENT CORP.",
+      "insider_count": 2,
+      "insiders": [
+        {
+          "name": "Katz Jason",
+          "role": "Chief Executive Officer",
+          "shares": 10000.0,
+          "dollars": 19700.0,
+          "date": "2026-05-21"
+        },
+        {
+          "name": "SLOANE BARRY",
+          "role": "Director",
+          "shares": 5000.0,
+          "dollars": 9750.0,
+          "date": "2026-05-21"
+        }
+      ],
+      "total_shares": 15000.0,
+      "total_dollars": 29450.0,
+      "date_range": "2026-05-21 \u2013 2026-05-21",
+      "transactions": [
+        {
+          "ticker": "IPM",
+          "company": "INTELLIGENT PROTECTION MANAGEMENT CORP.",
+          "buyer_name": "Katz Jason",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-05-21",
+          "file_date": "2026-05-26",
+          "shares": 10000.0,
+          "price_per_share": 1.97,
+          "total_dollars": 19700.0,
+          "security": "Common Stock",
+          "accession_no": "0001213900-26-060753-ownership.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "IPM",
+          "company": "INTELLIGENT PROTECTION MANAGEMENT CORP.",
+          "buyer_name": "SLOANE BARRY",
+          "role": "Director",
+          "transaction_date": "2026-05-21",
+          "file_date": "2026-05-22",
+          "shares": 5000.0,
+          "price_per_share": 1.95,
+          "total_dollars": 9750.0,
+          "security": "Common Stock",
+          "accession_no": "0001213900-26-060283-ownership.xml",
+          "transaction_code": "P"
+        }
+      ],
+      "signal_strength": "MODERATE"
+    },
+    {
+      "ticker": "MNTS",
+      "company": "Momentus Inc.",
+      "insider_count": 2,
+      "insiders": [
+        {
+          "name": "Hadfield Chris",
+          "role": "Director",
+          "shares": 2000.0,
+          "dollars": 14380.0,
+          "date": "2026-05-21"
+        },
+        {
+          "name": "Kabot Brian",
+          "role": "Director",
+          "shares": 250.0,
+          "dollars": 1378.75,
+          "date": "2026-05-20"
+        }
+      ],
+      "total_shares": 2250.0,
+      "total_dollars": 15758.75,
+      "date_range": "2026-05-20 \u2013 2026-05-21",
+      "transactions": [
+        {
+          "ticker": "MNTS",
+          "company": "Momentus Inc.",
+          "buyer_name": "Hadfield Chris",
+          "role": "Director",
+          "transaction_date": "2026-05-21",
+          "file_date": "2026-05-26",
+          "shares": 2000.0,
+          "price_per_share": 7.19,
+          "total_dollars": 14380.0,
+          "security": "Class A Common Stock",
+          "accession_no": "0001837938-26-000004-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "MNTS",
+          "company": "Momentus Inc.",
+          "buyer_name": "Kabot Brian",
+          "role": "Director",
+          "transaction_date": "2026-05-20",
+          "file_date": "2026-05-22",
+          "shares": 250.0,
+          "price_per_share": 5.515,
+          "total_dollars": 1378.75,
+          "security": "Class A Common Stock",
+          "accession_no": "0001786113-26-000005-primary_doc.xml",
+          "transaction_code": "P"
+        }
+      ],
+      "signal_strength": "WEAK"
     }
   ],
   "all_transactions": [
+    {
+      "ticker": "NEWT",
+      "company": "NewtekOne, Inc.",
+      "buyer_name": "Downs Peter Mathison",
+      "role": "President, Newtek Bank",
+      "transaction_date": "2026-05-26",
+      "file_date": "2026-05-26",
+      "shares": 737.0,
+      "price_per_share": 13.56,
+      "total_dollars": 9993.720000000001,
+      "security": "Common Stock",
+      "accession_no": "0001628280-26-037967-wk-form4_1779810866.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "TMP",
+      "company": "TOMPKINS FINANCIAL CORP",
+      "buyer_name": "Rahilly Ita M",
+      "role": "Director",
+      "transaction_date": "2026-05-26",
+      "file_date": "2026-05-26",
+      "shares": 1164.144,
+      "price_per_share": 85.9,
+      "total_dollars": 99999.96960000001,
+      "security": "Common Stock",
+      "accession_no": "0001005817-26-000064-form4.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "IPM",
+      "company": "INTELLIGENT PROTECTION MANAGEMENT CORP.",
+      "buyer_name": "Katz Jason",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-05-21",
+      "file_date": "2026-05-26",
+      "shares": 10000.0,
+      "price_per_share": 1.97,
+      "total_dollars": 19700.0,
+      "security": "Common Stock",
+      "accession_no": "0001213900-26-060753-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "CWBC",
+      "company": "Community West Bancshares",
+      "buyer_name": "STOVESAND KIRK",
+      "role": "Director",
+      "transaction_date": "2026-05-22",
+      "file_date": "2026-05-26",
+      "shares": 257.0,
+      "price_per_share": 23.9,
+      "total_dollars": 6142.299999999999,
+      "security": "CWBC - Common Stock",
+      "accession_no": "0001628280-26-038016-wk-form4_1779818854.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "OWLS",
+      "company": "OBOOK HOLDINGS INC.",
+      "buyer_name": "WANG CHUN KAI",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-05-22",
+      "file_date": "2026-05-26",
+      "shares": 100.0,
+      "price_per_share": 5.641,
+      "total_dollars": 564.1,
+      "security": "Class A Common Shares",
+      "accession_no": "0002109337-26-000006-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "IRIX",
+      "company": "IRIDEX CORP",
+      "buyer_name": "Dizon Romeo R",
+      "role": "Chief Financial Officer",
+      "transaction_date": "2026-05-26",
+      "file_date": "2026-05-26",
+      "shares": 5004.0,
+      "price_per_share": 1.0,
+      "total_dollars": 5004.0,
+      "security": "Common Stock",
+      "accession_no": "0001193125-26-238277-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "ASPS",
+      "company": "ALTISOURCE PORTFOLIO SOLUTIONS S.A.",
+      "buyer_name": "Shepro William B",
+      "role": "Chair and CEO",
+      "transaction_date": "2026-05-22",
+      "file_date": "2026-05-26",
+      "shares": 3511.0,
+      "price_per_share": 6.02,
+      "total_dollars": 21136.219999999998,
+      "security": "Common Stock",
+      "accession_no": "0001289315-26-000007-f4_a1eus000008svzbmaq-live.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "HSHP",
+      "company": "Himalaya Shipping Ltd.",
+      "buyer_name": "Svensen Lars-Christian",
+      "role": "Contracted CEO",
+      "transaction_date": "2026-05-22",
+      "file_date": "2026-05-26",
+      "shares": 4000.0,
+      "price_per_share": 14.2,
+      "total_dollars": 56800.0,
+      "security": "Common Shares",
+      "accession_no": "0001959455-26-000082-wk-form4_1779811927.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "ZOMDF",
+      "company": "Zomedica Corp.",
+      "buyer_name": "Klass Russell Kevin",
+      "role": "Sr. Vice President, Sales",
+      "transaction_date": "2026-05-21-05:00",
+      "file_date": "2026-05-26",
+      "shares": 104000.0,
+      "price_per_share": 0.103,
+      "total_dollars": 10712.0,
+      "security": "Common Stock, without par value",
+      "accession_no": "0001654954-26-005315-form4.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "ECOR",
+      "company": "electroCore, Inc.",
+      "buyer_name": "Errico Thomas J.",
+      "role": "Director",
+      "transaction_date": "2026-05-21",
+      "file_date": "2026-05-26",
+      "shares": 9992.0,
+      "price_per_share": 5.99,
+      "total_dollars": 59852.08,
+      "security": "Common Stock",
+      "accession_no": "0001493152-26-025177-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "CIA",
+      "company": "CITIZENS, INC.",
+      "buyer_name": "Stenberg Jon",
+      "role": "President & CEO",
+      "transaction_date": "2026-05-21",
+      "file_date": "2026-05-26",
+      "shares": 10000.0,
+      "price_per_share": 4.8192,
+      "total_dollars": 48192.00000000001,
+      "security": "Citizens, Inc. Class A Common Stock",
+      "accession_no": "0002015793-26-000010-wk-form4_1779805689.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "MNTS",
+      "company": "Momentus Inc.",
+      "buyer_name": "Hadfield Chris",
+      "role": "Director",
+      "transaction_date": "2026-05-21",
+      "file_date": "2026-05-26",
+      "shares": 2000.0,
+      "price_per_share": 7.19,
+      "total_dollars": 14380.0,
+      "security": "Class A Common Stock",
+      "accession_no": "0001837938-26-000004-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-05-15",
+      "file_date": "2026-05-26",
+      "shares": 47280.0,
+      "price_per_share": 26.34,
+      "total_dollars": 1245355.2,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-065999-tm2615603-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-05-18",
+      "file_date": "2026-05-26",
+      "shares": 22440.0,
+      "price_per_share": 28.0,
+      "total_dollars": 628320.0,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-065999-tm2615603-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-05-19",
+      "file_date": "2026-05-26",
+      "shares": 11340.0,
+      "price_per_share": 26.87,
+      "total_dollars": 304705.8,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-065999-tm2615603-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-05-20",
+      "file_date": "2026-05-26",
+      "shares": 45600.0,
+      "price_per_share": 27.13,
+      "total_dollars": 1237128.0,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-065999-tm2615603-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-05-21",
+      "file_date": "2026-05-26",
+      "shares": 28560.0,
+      "price_per_share": 26.97,
+      "total_dollars": 770263.2,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-065999-tm2615603-1_4seq1.xml",
+      "transaction_code": "P"
+    },
     {
       "ticker": "MRAI",
       "company": "Marpai, Inc.",
@@ -729,6 +912,20 @@
       "transaction_code": "P"
     },
     {
+      "ticker": "XZO",
+      "company": "Exzeo Group, Inc.",
+      "buyer_name": "Patel Paresh",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-05-21",
+      "file_date": "2026-05-22",
+      "shares": 2000.0,
+      "price_per_share": 12.82,
+      "total_dollars": 25640.0,
+      "security": "Common Stock",
+      "accession_no": "0001193125-26-236927-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
       "ticker": "HYNE",
       "company": "Hoyne Bancorp, Inc.",
       "buyer_name": "Rosenbaum Steven F.",
@@ -768,20 +965,6 @@
       "total_dollars": 2677.86,
       "security": "Common Stock",
       "accession_no": "0001104659-26-065572-tm2615396-1_4seq1.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "XZO",
-      "company": "Exzeo Group, Inc.",
-      "buyer_name": "Patel Paresh",
-      "role": "Chief Executive Officer",
-      "transaction_date": "2026-05-21",
-      "file_date": "2026-05-22",
-      "shares": 2000.0,
-      "price_per_share": 12.82,
-      "total_dollars": 25640.0,
-      "security": "Common Stock",
-      "accession_no": "0001193125-26-236927-ownership.xml",
       "transaction_code": "P"
     },
     {
@@ -827,20 +1010,6 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "NONE",
-      "company": "Fundrise Income Real Estate Fund, LLC",
-      "buyer_name": "Monte Mark David",
-      "role": "Director",
-      "transaction_date": "2026-05-21",
-      "file_date": "2026-05-22",
-      "shares": 98.3284,
-      "price_per_share": 10.17,
-      "total_dollars": 999.999828,
-      "security": "Common Shares",
-      "accession_no": "0001435109-26-000088-primary_doc.xml",
-      "transaction_code": "P"
-    },
-    {
       "ticker": "BRCB",
       "company": "Black Rock Coffee Bar, Inc.",
       "buyer_name": "Geyer Clay Howard",
@@ -869,17 +1038,17 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "IPM",
-      "company": "INTELLIGENT PROTECTION MANAGEMENT CORP.",
-      "buyer_name": "SLOANE BARRY",
+      "ticker": "NONE",
+      "company": "Fundrise Income Real Estate Fund, LLC",
+      "buyer_name": "Monte Mark David",
       "role": "Director",
       "transaction_date": "2026-05-21",
       "file_date": "2026-05-22",
-      "shares": 5000.0,
-      "price_per_share": 1.95,
-      "total_dollars": 9750.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-060283-ownership.xml",
+      "shares": 98.3284,
+      "price_per_share": 10.17,
+      "total_dollars": 999.999828,
+      "security": "Common Shares",
+      "accession_no": "0001435109-26-000088-primary_doc.xml",
       "transaction_code": "P"
     },
     {
@@ -894,6 +1063,20 @@
       "total_dollars": 900000.0,
       "security": "Ordinary Shares",
       "accession_no": "0001213900-26-060307-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "IPM",
+      "company": "INTELLIGENT PROTECTION MANAGEMENT CORP.",
+      "buyer_name": "SLOANE BARRY",
+      "role": "Director",
+      "transaction_date": "2026-05-21",
+      "file_date": "2026-05-22",
+      "shares": 5000.0,
+      "price_per_share": 1.95,
+      "total_dollars": 9750.0,
+      "security": "Common Stock",
+      "accession_no": "0001213900-26-060283-ownership.xml",
       "transaction_code": "P"
     },
     {
@@ -1104,20 +1287,6 @@
       "total_dollars": 22160.0,
       "security": "Common Stock, par value $0.0001 per share",
       "accession_no": "0001628280-26-037613-wk-form4_1779467869.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "DBD",
-      "company": "DIEBOLD NIXDORF, Inc",
-      "buyer_name": "Myers Jonathan",
-      "role": "EVP, Chief Revenue Officer",
-      "transaction_date": "2026-05-22",
-      "file_date": "2026-05-22",
-      "shares": 1360.0,
-      "price_per_share": 73.41,
-      "total_dollars": 99837.59999999999,
-      "security": "Common Stock",
-      "accession_no": "0001944597-26-000007-wk-form4_1779487486.xml",
       "transaction_code": "P"
     },
     {
@@ -1849,6 +2018,20 @@
       "transaction_code": "P"
     },
     {
+      "ticker": "RNXT",
+      "company": "RenovoRx, Inc.",
+      "buyer_name": "VOLL MARK",
+      "role": "Chief Financial Officer",
+      "transaction_date": "2026-05-19",
+      "file_date": "2026-05-21",
+      "shares": 25000.0,
+      "price_per_share": 0.7876,
+      "total_dollars": 19690.0,
+      "security": "Common Stock",
+      "accession_no": "0001493152-26-024726-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
       "ticker": "BETR",
       "company": "Better Home & Finance Holding Co",
       "buyer_name": "Garg Vishal",
@@ -1961,31 +2144,31 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "TRDA",
-      "company": "Entrada Therapeutics, Inc.",
-      "buyer_name": "Zeiher Bernhardt G",
+      "ticker": "BSX",
+      "company": "BOSTON SCIENTIFIC CORP",
+      "buyer_name": "Habiger David C",
       "role": "Director",
-      "transaction_date": "2026-05-20",
+      "transaction_date": "2026-05-19",
       "file_date": "2026-05-21",
-      "shares": 5000.0,
-      "price_per_share": 5.8632,
-      "total_dollars": 29316.0,
+      "shares": 2200.0,
+      "price_per_share": 56.9451,
+      "total_dollars": 125279.21999999999,
       "security": "Common Stock",
-      "accession_no": "0001689375-26-000030-wk-form4_1779395488.xml",
+      "accession_no": "0001225208-26-005546-doc4.xml",
       "transaction_code": "P"
     },
     {
-      "ticker": "XZO",
-      "company": "Exzeo Group, Inc.",
-      "buyer_name": "Patel Paresh",
-      "role": "Chief Executive Officer",
+      "ticker": "BSX",
+      "company": "BOSTON SCIENTIFIC CORP",
+      "buyer_name": "Habiger David C",
+      "role": "Director",
       "transaction_date": "2026-05-20",
       "file_date": "2026-05-21",
-      "shares": 2000.0,
-      "price_per_share": 13.33,
-      "total_dollars": 26660.0,
+      "shares": 2250.0,
+      "price_per_share": 55.9195,
+      "total_dollars": 125818.875,
       "security": "Common Stock",
-      "accession_no": "0001193125-26-234438-ownership.xml",
+      "accession_no": "0001225208-26-005546-doc4.xml",
       "transaction_code": "P"
     },
     {
@@ -2014,6 +2197,20 @@
       "total_dollars": 474900.0,
       "security": "Common Stock",
       "accession_no": "0001104659-26-065152-tm2615246-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "PPRUX",
+      "company": "PGIM Real Estate Fund Inc.",
+      "buyer_name": "Parker Stuart",
+      "role": "President",
+      "transaction_date": "2026-05-20",
+      "file_date": "2026-05-21",
+      "shares": 8204.792,
+      "price_per_share": 30.47,
+      "total_dollars": 250000.01223999998,
+      "security": "PGIM Real Estate Fund Inc. - Class I Shares",
+      "accession_no": "0001547322-26-000002-primary_doc.xml",
       "transaction_code": "P"
     },
     {
@@ -2059,17 +2256,31 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "PPRUX",
-      "company": "PGIM Real Estate Fund Inc.",
-      "buyer_name": "Parker Stuart",
-      "role": "President",
+      "ticker": "BCDA",
+      "company": "BioCardia, Inc.",
+      "buyer_name": "Altman Peter",
+      "role": "President and CEO",
+      "transaction_date": "2026-05-19",
+      "file_date": "2026-05-21",
+      "shares": 200.0,
+      "price_per_share": 0.95,
+      "total_dollars": 190.0,
+      "security": "Common Stock",
+      "accession_no": "0001437749-26-018125-rdgdoc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "BCDA",
+      "company": "BioCardia, Inc.",
+      "buyer_name": "Altman Peter",
+      "role": "President and CEO",
       "transaction_date": "2026-05-20",
       "file_date": "2026-05-21",
-      "shares": 8204.792,
-      "price_per_share": 30.47,
-      "total_dollars": 250000.01223999998,
-      "security": "PGIM Real Estate Fund Inc. - Class I Shares",
-      "accession_no": "0001547322-26-000002-primary_doc.xml",
+      "shares": 1500.0,
+      "price_per_share": 0.92,
+      "total_dollars": 1380.0,
+      "security": "Common Stock",
+      "accession_no": "0001437749-26-018125-rdgdoc.xml",
       "transaction_code": "P"
     },
     {
@@ -2115,34 +2326,6 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "BCDA",
-      "company": "BioCardia, Inc.",
-      "buyer_name": "Altman Peter",
-      "role": "President and CEO",
-      "transaction_date": "2026-05-19",
-      "file_date": "2026-05-21",
-      "shares": 200.0,
-      "price_per_share": 0.95,
-      "total_dollars": 190.0,
-      "security": "Common Stock",
-      "accession_no": "0001437749-26-018125-rdgdoc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "BCDA",
-      "company": "BioCardia, Inc.",
-      "buyer_name": "Altman Peter",
-      "role": "President and CEO",
-      "transaction_date": "2026-05-20",
-      "file_date": "2026-05-21",
-      "shares": 1500.0,
-      "price_per_share": 0.92,
-      "total_dollars": 1380.0,
-      "security": "Common Stock",
-      "accession_no": "0001437749-26-018125-rdgdoc.xml",
-      "transaction_code": "P"
-    },
-    {
       "ticker": "HDSN",
       "company": "HUDSON TECHNOLOGIES INC /NY",
       "buyer_name": "Bertaux Brian J.",
@@ -2182,118 +2365,6 @@
       "total_dollars": 2687.4500000000003,
       "security": "Common Stock",
       "accession_no": "0001437749-26-017995-rdgdoc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "RGR",
-      "company": "STURM RUGER & CO INC",
-      "buyer_name": "Seyfert Todd William",
-      "role": "President & CEO",
-      "transaction_date": "2026-05-20",
-      "file_date": "2026-05-21",
-      "shares": 1500.0,
-      "price_per_share": 39.15,
-      "total_dollars": 58725.0,
-      "security": "Common Stock",
-      "accession_no": "0000095029-26-000059-form4.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "CRESY",
-      "company": "CRESUD INC",
-      "buyer_name": "Zang Saul",
-      "role": "Director",
-      "transaction_date": "2026-05-20",
-      "file_date": "2026-05-21",
-      "shares": 17000.0,
-      "price_per_share": 10.6343,
-      "total_dollars": 180783.1,
-      "security": "American Depositary Shares (ADS)",
-      "accession_no": "0001836939-26-000005-primary_doc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "ROCK",
-      "company": "GIBRALTAR INDUSTRIES, INC.",
-      "buyer_name": "Lovechio Joseph A",
-      "role": "VP and CFO",
-      "transaction_date": "2026-05-20",
-      "file_date": "2026-05-21",
-      "shares": 1000.0,
-      "price_per_share": 34.615,
-      "total_dollars": 34615.0,
-      "security": "Common Stock",
-      "accession_no": "0000912562-26-000118-form4.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "FBIN",
-      "company": "Fortune Brands Innovations, Inc.",
-      "buyer_name": "GARDEN EDWARD P",
-      "role": "Director",
-      "transaction_date": "2026-05-20",
-      "file_date": "2026-05-21",
-      "shares": 57400.0,
-      "price_per_share": 34.89,
-      "total_dollars": 2002686.0,
-      "security": "Common Stock, Par Value $0.01",
-      "accession_no": "0001213900-26-060183-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "BRCB",
-      "company": "Black Rock Coffee Bar, Inc.",
-      "buyer_name": "Schmidt Michael Ryan",
-      "role": "Principal Accounting Officer",
-      "transaction_date": "2026-05-20",
-      "file_date": "2026-05-21",
-      "shares": 7100.0,
-      "price_per_share": 6.98,
-      "total_dollars": 49558.0,
-      "security": "Class A Common Stock",
-      "accession_no": "0001628280-26-037459-wk-form4_1779403020.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "ANVS",
-      "company": "Annovis Bio, Inc.",
-      "buyer_name": "Hoffman Michael B",
-      "role": "Director",
-      "transaction_date": "2026-05-20",
-      "file_date": "2026-05-21",
-      "shares": 2562.0,
-      "price_per_share": 1.75,
-      "total_dollars": 4483.5,
-      "security": "Common Stock",
-      "accession_no": "0001104659-26-065311-tm2615429-1_4seq1.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "ANVS",
-      "company": "Annovis Bio, Inc.",
-      "buyer_name": "Hoffman Michael B",
-      "role": "Director",
-      "transaction_date": "2026-05-20",
-      "file_date": "2026-05-21",
-      "shares": 18849.0,
-      "price_per_share": 1.8,
-      "total_dollars": 33928.200000000004,
-      "security": "Common Stock",
-      "accession_no": "0001104659-26-065311-tm2615429-1_4seq1.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "ANVS",
-      "company": "Annovis Bio, Inc.",
-      "buyer_name": "Hoffman Michael B",
-      "role": "Director",
-      "transaction_date": "2026-05-20",
-      "file_date": "2026-05-21",
-      "shares": 54933.0,
-      "price_per_share": 1.8999,
-      "total_dollars": 104367.2067,
-      "security": "Common Stock",
-      "accession_no": "0001104659-26-065311-tm2615429-1_4seq1.xml",
       "transaction_code": "P"
     }
   ]
