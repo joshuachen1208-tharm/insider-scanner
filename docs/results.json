@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-04T12:33:47.022297+00:00",
+  "generated_at": "2026-07-05T12:41:44.260450+00:00",
   "lookback_days": 3,
   "cluster_window_days": 5,
-  "total_transactions": 25,
-  "total_clusters": 4,
+  "total_transactions": 28,
+  "total_clusters": 5,
   "clusters": [
     {
       "ticker": "CREX",
@@ -63,7 +63,7 @@
     {
       "ticker": "PSNY",
       "company": "Polestar Automotive Holding UK PLC",
-      "insider_count": 2,
+      "insider_count": 3,
       "insiders": [
         {
           "name": "Zhang Quan (Joe)",
@@ -78,10 +78,17 @@
           "shares": 1709.0,
           "dollars": 30010.039999999997,
           "date": "2026-06-30"
+        },
+        {
+          "name": "Gorjanc Christine Marie",
+          "role": "Director",
+          "shares": 978.0,
+          "dollars": 18415.739999999998,
+          "date": "2026-06-30"
         }
       ],
-      "total_shares": 3409.0,
-      "total_dollars": 60100.03999999999,
+      "total_shares": 4387.0,
+      "total_dollars": 78515.78,
       "date_range": "2026-06-30 \u2013 2026-06-30",
       "transactions": [
         {
@@ -111,14 +118,28 @@
           "security": "Class A American Depositary Shares",
           "accession_no": "0002115931-26-000006-wk-form4_1783029853.xml",
           "transaction_code": "P"
+        },
+        {
+          "ticker": "PSNY",
+          "company": "Polestar Automotive Holding UK PLC",
+          "buyer_name": "Gorjanc Christine Marie",
+          "role": "Director",
+          "transaction_date": "2026-06-30",
+          "file_date": "2026-07-02",
+          "shares": 978.0,
+          "price_per_share": 18.83,
+          "total_dollars": 18415.739999999998,
+          "security": "Class A American Depositary Shares",
+          "accession_no": "0001345082-26-000006-wk-form4_1783029598.xml",
+          "transaction_code": "P"
         }
       ],
-      "signal_strength": "WEAK"
+      "signal_strength": "MODERATE"
     },
     {
       "ticker": "MPB",
       "company": "MID PENN BANCORP INC",
-      "insider_count": 5,
+      "insider_count": 6,
       "insiders": [
         {
           "name": "Brumbaugh Kimberly J",
@@ -149,6 +170,13 @@
           "date": "2026-06-30"
         },
         {
+          "name": "De Soto Matthew G",
+          "role": "Director",
+          "shares": 287.0,
+          "dollars": 9999.080000000002,
+          "date": "2026-06-30"
+        },
+        {
           "name": "MOWERY THEODORE W",
           "role": "Director",
           "shares": 58.0,
@@ -156,8 +184,8 @@
           "date": "2026-06-30"
         }
       ],
-      "total_shares": 504.0,
-      "total_dollars": 17559.360000000004,
+      "total_shares": 791.0,
+      "total_dollars": 27558.440000000006,
       "date_range": "2026-06-30 \u2013 2026-06-30",
       "transactions": [
         {
@@ -219,6 +247,20 @@
         {
           "ticker": "MPB",
           "company": "MID PENN BANCORP INC",
+          "buyer_name": "De Soto Matthew G",
+          "role": "Director",
+          "transaction_date": "2026-06-30",
+          "file_date": "2026-07-02",
+          "shares": 287.0,
+          "price_per_share": 34.84,
+          "total_dollars": 9999.080000000002,
+          "security": "Mid Penn Bancorp, Inc. Common Stock",
+          "accession_no": "0001422493-26-000012-wk-form4_1783023634.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "MPB",
+          "company": "MID PENN BANCORP INC",
           "buyer_name": "MOWERY THEODORE W",
           "role": "Director",
           "transaction_date": "2026-06-30",
@@ -231,7 +273,7 @@
           "transaction_code": "P"
         }
       ],
-      "signal_strength": "STRONG"
+      "signal_strength": "VERY STRONG"
     },
     {
       "ticker": "CTM",
@@ -329,6 +371,61 @@
         }
       ],
       "signal_strength": "STRONG"
+    },
+    {
+      "ticker": "RGCO",
+      "company": "RGC RESOURCES INC",
+      "insider_count": 2,
+      "insiders": [
+        {
+          "name": "Miles Christen Brooke",
+          "role": "VP, Human Resources",
+          "shares": 6.18,
+          "dollars": 149.9886,
+          "date": "2026-07-01"
+        },
+        {
+          "name": "Oliver Lawrence T.",
+          "role": "Senior VP and Secretary",
+          "shares": 12.361,
+          "dollars": 300.00147,
+          "date": "2026-07-01"
+        }
+      ],
+      "total_shares": 18.541,
+      "total_dollars": 449.99006999999995,
+      "date_range": "2026-07-01 \u2013 2026-07-01",
+      "transactions": [
+        {
+          "ticker": "RGCO",
+          "company": "RGC RESOURCES INC",
+          "buyer_name": "Miles Christen Brooke",
+          "role": "VP, Human Resources",
+          "transaction_date": "2026-07-01",
+          "file_date": "2026-07-02",
+          "shares": 6.18,
+          "price_per_share": 24.27,
+          "total_dollars": 149.9886,
+          "security": "Common Stock",
+          "accession_no": "0001437749-26-022424-rdgdoc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "RGCO",
+          "company": "RGC RESOURCES INC",
+          "buyer_name": "Oliver Lawrence T.",
+          "role": "Senior VP and Secretary",
+          "transaction_date": "2026-07-01",
+          "file_date": "2026-07-02",
+          "shares": 12.361,
+          "price_per_share": 24.27,
+          "total_dollars": 300.00147,
+          "security": "Common Stock",
+          "accession_no": "0001437749-26-022422-rdgdoc.xml",
+          "transaction_code": "P"
+        }
+      ],
+      "signal_strength": "WEAK"
     }
   ],
   "all_transactions": [
@@ -543,6 +640,62 @@
       "transaction_code": "P"
     },
     {
+      "ticker": "RGCO",
+      "company": "RGC RESOURCES INC",
+      "buyer_name": "Miles Christen Brooke",
+      "role": "VP, Human Resources",
+      "transaction_date": "2026-07-01",
+      "file_date": "2026-07-02",
+      "shares": 6.18,
+      "price_per_share": 24.27,
+      "total_dollars": 149.9886,
+      "security": "Common Stock",
+      "accession_no": "0001437749-26-022424-rdgdoc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "RGCO",
+      "company": "RGC RESOURCES INC",
+      "buyer_name": "Oliver Lawrence T.",
+      "role": "Senior VP and Secretary",
+      "transaction_date": "2026-07-01",
+      "file_date": "2026-07-02",
+      "shares": 12.361,
+      "price_per_share": 24.27,
+      "total_dollars": 300.00147,
+      "security": "Common Stock",
+      "accession_no": "0001437749-26-022422-rdgdoc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "MPB",
+      "company": "MID PENN BANCORP INC",
+      "buyer_name": "De Soto Matthew G",
+      "role": "Director",
+      "transaction_date": "2026-06-30",
+      "file_date": "2026-07-02",
+      "shares": 287.0,
+      "price_per_share": 34.84,
+      "total_dollars": 9999.080000000002,
+      "security": "Mid Penn Bancorp, Inc. Common Stock",
+      "accession_no": "0001422493-26-000012-wk-form4_1783023634.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "PSNY",
+      "company": "Polestar Automotive Holding UK PLC",
+      "buyer_name": "Gorjanc Christine Marie",
+      "role": "Director",
+      "transaction_date": "2026-06-30",
+      "file_date": "2026-07-02",
+      "shares": 978.0,
+      "price_per_share": 18.83,
+      "total_dollars": 18415.739999999998,
+      "security": "Class A American Depositary Shares",
+      "accession_no": "0001345082-26-000006-wk-form4_1783029598.xml",
+      "transaction_code": "P"
+    },
+    {
       "ticker": "MPB",
       "company": "MID PENN BANCORP INC",
       "buyer_name": "MOWERY THEODORE W",
@@ -582,20 +735,6 @@
       "total_dollars": 28520.2,
       "security": "Common Shares, Par Value $0.001",
       "accession_no": "0001270868-26-000003-primary_doc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "GPUS",
-      "company": "Hyperscale Data, Inc.",
-      "buyer_name": "AULT MILTON C III",
-      "role": "Executive Chairman",
-      "transaction_date": "2026-06-30",
-      "file_date": "2026-07-02",
-      "shares": 100.0,
-      "price_per_share": 19.525,
-      "total_dollars": 1952.4999999999998,
-      "security": "13% Series D Cumulative Redeemable Perpetual Preferred Stock",
-      "accession_no": "0001214659-26-008149-marketforms-73524.xml",
       "transaction_code": "P"
     },
     {
