@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-05T12:41:44.260450+00:00",
+  "generated_at": "2026-07-06T14:56:26.551453+00:00",
   "lookback_days": 3,
   "cluster_window_days": 5,
   "total_transactions": 28,
-  "total_clusters": 5,
+  "total_clusters": 4,
   "clusters": [
     {
       "ticker": "CREX",
@@ -63,7 +63,7 @@
     {
       "ticker": "PSNY",
       "company": "Polestar Automotive Holding UK PLC",
-      "insider_count": 3,
+      "insider_count": 2,
       "insiders": [
         {
           "name": "Zhang Quan (Joe)",
@@ -78,17 +78,10 @@
           "shares": 1709.0,
           "dollars": 30010.039999999997,
           "date": "2026-06-30"
-        },
-        {
-          "name": "Gorjanc Christine Marie",
-          "role": "Director",
-          "shares": 978.0,
-          "dollars": 18415.739999999998,
-          "date": "2026-06-30"
         }
       ],
-      "total_shares": 4387.0,
-      "total_dollars": 78515.78,
+      "total_shares": 3409.0,
+      "total_dollars": 60100.03999999999,
       "date_range": "2026-06-30 \u2013 2026-06-30",
       "transactions": [
         {
@@ -118,28 +111,14 @@
           "security": "Class A American Depositary Shares",
           "accession_no": "0002115931-26-000006-wk-form4_1783029853.xml",
           "transaction_code": "P"
-        },
-        {
-          "ticker": "PSNY",
-          "company": "Polestar Automotive Holding UK PLC",
-          "buyer_name": "Gorjanc Christine Marie",
-          "role": "Director",
-          "transaction_date": "2026-06-30",
-          "file_date": "2026-07-02",
-          "shares": 978.0,
-          "price_per_share": 18.83,
-          "total_dollars": 18415.739999999998,
-          "security": "Class A American Depositary Shares",
-          "accession_no": "0001345082-26-000006-wk-form4_1783029598.xml",
-          "transaction_code": "P"
         }
       ],
-      "signal_strength": "MODERATE"
+      "signal_strength": "WEAK"
     },
     {
       "ticker": "MPB",
       "company": "MID PENN BANCORP INC",
-      "insider_count": 6,
+      "insider_count": 4,
       "insiders": [
         {
           "name": "Brumbaugh Kimberly J",
@@ -163,20 +142,6 @@
           "date": "2026-06-30"
         },
         {
-          "name": "Abel Robert A",
-          "role": "Director",
-          "shares": 15.0,
-          "dollars": 522.6,
-          "date": "2026-06-30"
-        },
-        {
-          "name": "De Soto Matthew G",
-          "role": "Director",
-          "shares": 287.0,
-          "dollars": 9999.080000000002,
-          "date": "2026-06-30"
-        },
-        {
           "name": "MOWERY THEODORE W",
           "role": "Director",
           "shares": 58.0,
@@ -184,8 +149,8 @@
           "date": "2026-06-30"
         }
       ],
-      "total_shares": 791.0,
-      "total_dollars": 27558.440000000006,
+      "total_shares": 489.0,
+      "total_dollars": 17036.760000000002,
       "date_range": "2026-06-30 \u2013 2026-06-30",
       "transactions": [
         {
@@ -233,34 +198,6 @@
         {
           "ticker": "MPB",
           "company": "MID PENN BANCORP INC",
-          "buyer_name": "Abel Robert A",
-          "role": "Director",
-          "transaction_date": "2026-06-30",
-          "file_date": "2026-07-02",
-          "shares": 15.0,
-          "price_per_share": 34.84,
-          "total_dollars": 522.6,
-          "security": "Mid Penn Bancorp, Inc. Common Stock",
-          "accession_no": "0001511696-26-000008-wk-form4_1783023444.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "MPB",
-          "company": "MID PENN BANCORP INC",
-          "buyer_name": "De Soto Matthew G",
-          "role": "Director",
-          "transaction_date": "2026-06-30",
-          "file_date": "2026-07-02",
-          "shares": 287.0,
-          "price_per_share": 34.84,
-          "total_dollars": 9999.080000000002,
-          "security": "Mid Penn Bancorp, Inc. Common Stock",
-          "accession_no": "0001422493-26-000012-wk-form4_1783023634.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "MPB",
-          "company": "MID PENN BANCORP INC",
           "buyer_name": "MOWERY THEODORE W",
           "role": "Director",
           "transaction_date": "2026-06-30",
@@ -273,7 +210,7 @@
           "transaction_code": "P"
         }
       ],
-      "signal_strength": "VERY STRONG"
+      "signal_strength": "STRONG"
     },
     {
       "ticker": "CTM",
@@ -307,12 +244,96 @@
           "shares": 1262.0,
           "dollars": 772.3439999999999,
           "date": "2026-07-01"
+        },
+        {
+          "name": "Merriman Andrew",
+          "role": "Chief Operating Officer",
+          "shares": 1202.0,
+          "dollars": 735.624,
+          "date": "2026-07-01"
+        },
+        {
+          "name": "Bell David T",
+          "role": "Chief Financial Officer",
+          "shares": 1202.0,
+          "dollars": 735.624,
+          "date": "2026-07-01"
+        },
+        {
+          "name": "MARTIN TAMMY L",
+          "role": "General Counsel  and Secretary",
+          "shares": 1202.0,
+          "dollars": 735.624,
+          "date": "2026-07-01"
+        },
+        {
+          "name": "Ives Glen R",
+          "role": "President",
+          "shares": 1262.0,
+          "dollars": 772.3439999999999,
+          "date": "2026-07-01"
         }
       ],
-      "total_shares": 4868.0,
-      "total_dollars": 2979.216,
+      "total_shares": 9736.0,
+      "total_dollars": 5958.432,
       "date_range": "2026-07-01 \u2013 2026-07-01",
       "transactions": [
+        {
+          "ticker": "CTM",
+          "company": "Castellum, Inc.",
+          "buyer_name": "Merriman Andrew",
+          "role": "Chief Operating Officer",
+          "transaction_date": "2026-07-01",
+          "file_date": "2026-07-02",
+          "shares": 1202.0,
+          "price_per_share": 0.612,
+          "total_dollars": 735.624,
+          "security": "Common Stock",
+          "accession_no": "0001877939-26-000061-wk-form4_1783022819.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "CTM",
+          "company": "Castellum, Inc.",
+          "buyer_name": "Bell David T",
+          "role": "Chief Financial Officer",
+          "transaction_date": "2026-07-01",
+          "file_date": "2026-07-02",
+          "shares": 1202.0,
+          "price_per_share": 0.612,
+          "total_dollars": 735.624,
+          "security": "Common Stock",
+          "accession_no": "0001877939-26-000060-wk-form4_1783022780.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "CTM",
+          "company": "Castellum, Inc.",
+          "buyer_name": "MARTIN TAMMY L",
+          "role": "General Counsel  and Secretary",
+          "transaction_date": "2026-07-01",
+          "file_date": "2026-07-02",
+          "shares": 1202.0,
+          "price_per_share": 0.612,
+          "total_dollars": 735.624,
+          "security": "Common Stock",
+          "accession_no": "0001877939-26-000059-wk-form4_1783022734.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "CTM",
+          "company": "Castellum, Inc.",
+          "buyer_name": "Ives Glen R",
+          "role": "President",
+          "transaction_date": "2026-07-01",
+          "file_date": "2026-07-02",
+          "shares": 1262.0,
+          "price_per_share": 0.612,
+          "total_dollars": 772.3439999999999,
+          "security": "Common Stock",
+          "accession_no": "0001877939-26-000058-wk-form4_1783022697.xml",
+          "transaction_code": "P"
+        },
         {
           "ticker": "CTM",
           "company": "Castellum, Inc.",
@@ -371,61 +392,6 @@
         }
       ],
       "signal_strength": "STRONG"
-    },
-    {
-      "ticker": "RGCO",
-      "company": "RGC RESOURCES INC",
-      "insider_count": 2,
-      "insiders": [
-        {
-          "name": "Miles Christen Brooke",
-          "role": "VP, Human Resources",
-          "shares": 6.18,
-          "dollars": 149.9886,
-          "date": "2026-07-01"
-        },
-        {
-          "name": "Oliver Lawrence T.",
-          "role": "Senior VP and Secretary",
-          "shares": 12.361,
-          "dollars": 300.00147,
-          "date": "2026-07-01"
-        }
-      ],
-      "total_shares": 18.541,
-      "total_dollars": 449.99006999999995,
-      "date_range": "2026-07-01 \u2013 2026-07-01",
-      "transactions": [
-        {
-          "ticker": "RGCO",
-          "company": "RGC RESOURCES INC",
-          "buyer_name": "Miles Christen Brooke",
-          "role": "VP, Human Resources",
-          "transaction_date": "2026-07-01",
-          "file_date": "2026-07-02",
-          "shares": 6.18,
-          "price_per_share": 24.27,
-          "total_dollars": 149.9886,
-          "security": "Common Stock",
-          "accession_no": "0001437749-26-022424-rdgdoc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "RGCO",
-          "company": "RGC RESOURCES INC",
-          "buyer_name": "Oliver Lawrence T.",
-          "role": "Senior VP and Secretary",
-          "transaction_date": "2026-07-01",
-          "file_date": "2026-07-02",
-          "shares": 12.361,
-          "price_per_share": 24.27,
-          "total_dollars": 300.00147,
-          "security": "Common Stock",
-          "accession_no": "0001437749-26-022422-rdgdoc.xml",
-          "transaction_code": "P"
-        }
-      ],
-      "signal_strength": "WEAK"
     }
   ],
   "all_transactions": [
@@ -469,6 +435,62 @@
       "total_dollars": 100.99705,
       "security": "Institutional Investment Strategy Fund - Founder Class Share",
       "accession_no": "0002004397-26-000004-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "CTM",
+      "company": "Castellum, Inc.",
+      "buyer_name": "Merriman Andrew",
+      "role": "Chief Operating Officer",
+      "transaction_date": "2026-07-01",
+      "file_date": "2026-07-02",
+      "shares": 1202.0,
+      "price_per_share": 0.612,
+      "total_dollars": 735.624,
+      "security": "Common Stock",
+      "accession_no": "0001877939-26-000061-wk-form4_1783022819.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "CTM",
+      "company": "Castellum, Inc.",
+      "buyer_name": "Bell David T",
+      "role": "Chief Financial Officer",
+      "transaction_date": "2026-07-01",
+      "file_date": "2026-07-02",
+      "shares": 1202.0,
+      "price_per_share": 0.612,
+      "total_dollars": 735.624,
+      "security": "Common Stock",
+      "accession_no": "0001877939-26-000060-wk-form4_1783022780.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "CTM",
+      "company": "Castellum, Inc.",
+      "buyer_name": "MARTIN TAMMY L",
+      "role": "General Counsel  and Secretary",
+      "transaction_date": "2026-07-01",
+      "file_date": "2026-07-02",
+      "shares": 1202.0,
+      "price_per_share": 0.612,
+      "total_dollars": 735.624,
+      "security": "Common Stock",
+      "accession_no": "0001877939-26-000059-wk-form4_1783022734.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "CTM",
+      "company": "Castellum, Inc.",
+      "buyer_name": "Ives Glen R",
+      "role": "President",
+      "transaction_date": "2026-07-01",
+      "file_date": "2026-07-02",
+      "shares": 1262.0,
+      "price_per_share": 0.612,
+      "total_dollars": 772.3439999999999,
+      "security": "Common Stock",
+      "accession_no": "0001877939-26-000058-wk-form4_1783022697.xml",
       "transaction_code": "P"
     },
     {
@@ -584,20 +606,6 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "MPB",
-      "company": "MID PENN BANCORP INC",
-      "buyer_name": "Abel Robert A",
-      "role": "Director",
-      "transaction_date": "2026-06-30",
-      "file_date": "2026-07-02",
-      "shares": 15.0,
-      "price_per_share": 34.84,
-      "total_dollars": 522.6,
-      "security": "Mid Penn Bancorp, Inc. Common Stock",
-      "accession_no": "0001511696-26-000008-wk-form4_1783023444.xml",
-      "transaction_code": "P"
-    },
-    {
       "ticker": "OTLC",
       "company": "Oncotelic Therapeutics, Inc.",
       "buyer_name": "Trieu Vuong",
@@ -637,62 +645,6 @@
       "total_dollars": 99998.5,
       "security": "Common Stock",
       "accession_no": "0001437749-26-022464-rdgdoc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "RGCO",
-      "company": "RGC RESOURCES INC",
-      "buyer_name": "Miles Christen Brooke",
-      "role": "VP, Human Resources",
-      "transaction_date": "2026-07-01",
-      "file_date": "2026-07-02",
-      "shares": 6.18,
-      "price_per_share": 24.27,
-      "total_dollars": 149.9886,
-      "security": "Common Stock",
-      "accession_no": "0001437749-26-022424-rdgdoc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "RGCO",
-      "company": "RGC RESOURCES INC",
-      "buyer_name": "Oliver Lawrence T.",
-      "role": "Senior VP and Secretary",
-      "transaction_date": "2026-07-01",
-      "file_date": "2026-07-02",
-      "shares": 12.361,
-      "price_per_share": 24.27,
-      "total_dollars": 300.00147,
-      "security": "Common Stock",
-      "accession_no": "0001437749-26-022422-rdgdoc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "MPB",
-      "company": "MID PENN BANCORP INC",
-      "buyer_name": "De Soto Matthew G",
-      "role": "Director",
-      "transaction_date": "2026-06-30",
-      "file_date": "2026-07-02",
-      "shares": 287.0,
-      "price_per_share": 34.84,
-      "total_dollars": 9999.080000000002,
-      "security": "Mid Penn Bancorp, Inc. Common Stock",
-      "accession_no": "0001422493-26-000012-wk-form4_1783023634.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "PSNY",
-      "company": "Polestar Automotive Holding UK PLC",
-      "buyer_name": "Gorjanc Christine Marie",
-      "role": "Director",
-      "transaction_date": "2026-06-30",
-      "file_date": "2026-07-02",
-      "shares": 978.0,
-      "price_per_share": 18.83,
-      "total_dollars": 18415.739999999998,
-      "security": "Class A American Depositary Shares",
-      "accession_no": "0001345082-26-000006-wk-form4_1783029598.xml",
       "transaction_code": "P"
     },
     {
@@ -780,6 +732,20 @@
       "transaction_code": "P"
     },
     {
+      "ticker": "GPUS",
+      "company": "Hyperscale Data, Inc.",
+      "buyer_name": "AULT MILTON C III",
+      "role": "Executive Chairman",
+      "transaction_date": "2026-06-30",
+      "file_date": "2026-07-02",
+      "shares": 100.0,
+      "price_per_share": 19.525,
+      "total_dollars": 1952.4999999999998,
+      "security": "13% Series D Cumulative Redeemable Perpetual Preferred Stock",
+      "accession_no": "0001214659-26-008149-marketforms-73524.xml",
+      "transaction_code": "P"
+    },
+    {
       "ticker": "WBX",
       "company": "Wallbox N.V.",
       "buyer_name": "Escorsa Enric Asuncion",
@@ -808,17 +774,17 @@
       "transaction_code": "P"
     },
     {
-      "ticker": "COLB",
-      "company": "COLUMBIA BANKING SYSTEM, INC.",
-      "buyer_name": "Deer Aaron James",
-      "role": "EVP Chief Strategy/Innov Offcr",
-      "transaction_date": "2026-06-30",
+      "ticker": "NONE",
+      "company": "BBR ALO Fund, LLC",
+      "buyer_name": "WINGERTZAHN MICHAEL",
+      "role": "Director",
+      "transaction_date": "2026-07-01",
       "file_date": "2026-07-02",
-      "shares": 886.0,
-      "price_per_share": 25.37,
-      "total_dollars": 22477.82,
-      "security": "Common Stock",
-      "accession_no": "0000887343-26-000161-wk-form4_1783027024.xml",
+      "shares": 338.724,
+      "price_per_share": 14.7613,
+      "total_dollars": 5000.0065812,
+      "security": "Shares of Limited Liability Company Interests",
+      "accession_no": "0001104659-26-080391-tm2619663-2_4seq1.xml",
       "transaction_code": "P"
     }
   ]
