@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-10T13:40:59.545328+00:00",
+  "generated_at": "2026-07-11T12:18:02.312010+00:00",
   "lookback_days": 3,
   "cluster_window_days": 5,
-  "total_transactions": 120,
-  "total_clusters": 9,
+  "total_transactions": 115,
+  "total_clusters": 6,
   "clusters": [
     {
       "ticker": "EWSB",
@@ -429,82 +429,6 @@
         }
       ],
       "signal_strength": "STRONG"
-    },
-    {
-      "ticker": "YPF",
-      "company": "YPF SOCIEDAD ANONIMA",
-      "insider_count": 2,
-      "insiders": [
-        {
-          "name": "Marin Horacio Daniel",
-          "role": "Chairman of the Board/ CEO",
-          "shares": 2840.0,
-          "dollars": 131634.0,
-          "date": "2026-07-02"
-        },
-        {
-          "name": "Farina Matias Osvaldo",
-          "role": "VP Upstream",
-          "shares": 4357.0,
-          "dollars": 201554.81999999998,
-          "date": "2026-07-02"
-        },
-        {
-          "name": "Farina Matias Osvaldo",
-          "role": "VP Upstream",
-          "shares": 4518.0,
-          "dollars": 199740.78,
-          "date": "2026-07-02"
-        }
-      ],
-      "total_shares": 11715.0,
-      "total_dollars": 532929.6,
-      "date_range": "2026-07-02 \u2013 2026-07-02",
-      "transactions": [
-        {
-          "ticker": "YPF",
-          "company": "YPF SOCIEDAD ANONIMA",
-          "buyer_name": "Marin Horacio Daniel",
-          "role": "Chairman of the Board/ CEO",
-          "transaction_date": "2026-07-02",
-          "file_date": "2026-07-06",
-          "shares": 2840.0,
-          "price_per_share": 46.35,
-          "total_dollars": 131634.0,
-          "security": "Class D Common Stock",
-          "accession_no": "0001292814-26-003681-ownership.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "YPF",
-          "company": "YPF SOCIEDAD ANONIMA",
-          "buyer_name": "Farina Matias Osvaldo",
-          "role": "VP Upstream",
-          "transaction_date": "2026-07-02",
-          "file_date": "2026-07-06",
-          "shares": 4357.0,
-          "price_per_share": 46.26,
-          "total_dollars": 201554.81999999998,
-          "security": "Class D Common Stock",
-          "accession_no": "0001292814-26-003679-ownership.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "YPF",
-          "company": "YPF SOCIEDAD ANONIMA",
-          "buyer_name": "Farina Matias Osvaldo",
-          "role": "VP Upstream",
-          "transaction_date": "2026-07-02",
-          "file_date": "2026-07-06",
-          "shares": 4518.0,
-          "price_per_share": 44.21,
-          "total_dollars": 199740.78,
-          "security": "American Depositary Shares",
-          "accession_no": "0001292814-26-003679-ownership.xml",
-          "transaction_code": "P"
-        }
-      ],
-      "signal_strength": "MODERATE"
     },
     {
       "ticker": "WRAP",
@@ -1323,82 +1247,6 @@
       "signal_strength": "MODERATE"
     },
     {
-      "ticker": "TURB",
-      "company": "Turbo Energy, S.A.",
-      "insider_count": 3,
-      "insiders": [
-        {
-          "name": "Canavate Marti Emilio",
-          "role": "Director",
-          "shares": 1000.0,
-          "dollars": 1310.0,
-          "date": "2026-05-19"
-        },
-        {
-          "name": "Bellvis Enrique Selva",
-          "role": "Chairman of the Board",
-          "shares": 9500.0,
-          "dollars": 10355.0,
-          "date": "2026-05-29"
-        },
-        {
-          "name": "Soria Herandez Mariano",
-          "role": "CEO, Interim CFO, GM & Dir.",
-          "shares": 4300.0,
-          "dollars": 4988.0,
-          "date": "2026-05-28"
-        }
-      ],
-      "total_shares": 14800.0,
-      "total_dollars": 16653.0,
-      "date_range": "2026-05-19 \u2013 2026-05-29",
-      "transactions": [
-        {
-          "ticker": "TURB",
-          "company": "Turbo Energy, S.A.",
-          "buyer_name": "Canavate Marti Emilio",
-          "role": "Director",
-          "transaction_date": "2026-05-19",
-          "file_date": "2026-07-06",
-          "shares": 1000.0,
-          "price_per_share": 1.31,
-          "total_dollars": 1310.0,
-          "security": "American Depositary Shares",
-          "accession_no": "0001213900-26-075550-ownership.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "TURB",
-          "company": "Turbo Energy, S.A.",
-          "buyer_name": "Bellvis Enrique Selva",
-          "role": "Chairman of the Board",
-          "transaction_date": "2026-05-29",
-          "file_date": "2026-07-06",
-          "shares": 9500.0,
-          "price_per_share": 1.09,
-          "total_dollars": 10355.0,
-          "security": "American Depositary Shares",
-          "accession_no": "0001213900-26-075548-ownership.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "TURB",
-          "company": "Turbo Energy, S.A.",
-          "buyer_name": "Soria Herandez Mariano",
-          "role": "CEO, Interim CFO, GM & Dir.",
-          "transaction_date": "2026-05-28",
-          "file_date": "2026-07-06",
-          "shares": 4300.0,
-          "price_per_share": 1.16,
-          "total_dollars": 4988.0,
-          "security": "American Depositary Shares",
-          "accession_no": "0001213900-26-075531-ownership.xml",
-          "transaction_code": "P"
-        }
-      ],
-      "signal_strength": "MODERATE"
-    },
-    {
       "ticker": "INTZ",
       "company": "INTRUSION INC",
       "insider_count": 2,
@@ -1452,85 +1300,107 @@
         }
       ],
       "signal_strength": "WEAK"
-    },
-    {
-      "ticker": "SWPR",
-      "company": "SunPower Inc.",
-      "insider_count": 2,
-      "insiders": [
-        {
-          "name": "Rodgers Thurman J",
-          "role": "Chief Executive Officer",
-          "shares": 7226186.0,
-          "dollars": 0.0,
-          "date": "2026-07-01"
-        },
-        {
-          "name": "Rodgers Thurman J",
-          "role": "Chief Executive Officer",
-          "shares": 633250.0,
-          "dollars": 0.0,
-          "date": "2026-07-01"
-        },
-        {
-          "name": "MCCRANIE J DANIEL",
-          "role": "Director",
-          "shares": 93650.0,
-          "dollars": 0.0,
-          "date": "2026-07-01"
-        }
-      ],
-      "total_shares": 7953086.0,
-      "total_dollars": 0.0,
-      "date_range": "2026-07-01 \u2013 2026-07-01",
-      "transactions": [
-        {
-          "ticker": "SWPR",
-          "company": "SunPower Inc.",
-          "buyer_name": "Rodgers Thurman J",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-01",
-          "file_date": "2026-07-06",
-          "shares": 7226186.0,
-          "price_per_share": 0.0,
-          "total_dollars": 0.0,
-          "security": "Common Stock",
-          "accession_no": "0001213900-26-075658-ownership.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "SWPR",
-          "company": "SunPower Inc.",
-          "buyer_name": "Rodgers Thurman J",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-01",
-          "file_date": "2026-07-06",
-          "shares": 633250.0,
-          "price_per_share": 0.0,
-          "total_dollars": 0.0,
-          "security": "Common Stock",
-          "accession_no": "0001213900-26-075658-ownership.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "SWPR",
-          "company": "SunPower Inc.",
-          "buyer_name": "MCCRANIE J DANIEL",
-          "role": "Director",
-          "transaction_date": "2026-07-01",
-          "file_date": "2026-07-06",
-          "shares": 93650.0,
-          "price_per_share": 0.0,
-          "total_dollars": 0.0,
-          "security": "Common Stock",
-          "accession_no": "0001213900-26-075520-ownership.xml",
-          "transaction_code": "P"
-        }
-      ],
-      "signal_strength": "STRONG"
     }
   ],
   "all_transactions": [
+    {
+      "ticker": "RDGL",
+      "company": "VIVOS INC",
+      "buyer_name": "Weeks Brad Allan",
+      "role": "President",
+      "transaction_date": "2026-07-09",
+      "file_date": "2026-07-10",
+      "shares": 48000.0,
+      "price_per_share": 0.08,
+      "total_dollars": 3840.0,
+      "security": "Common Stock",
+      "accession_no": "0002131351-26-000004-form4-07102026_050756.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "RDGL",
+      "company": "VIVOS INC",
+      "buyer_name": "Weeks Brad Allan",
+      "role": "President",
+      "transaction_date": "2026-07-10",
+      "file_date": "2026-07-10",
+      "shares": 12000.0,
+      "price_per_share": 0.08,
+      "total_dollars": 960.0,
+      "security": "Common Stock",
+      "accession_no": "0002131351-26-000004-form4-07102026_050756.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "GLOO",
+      "company": "Gloo Holdings, Inc.",
+      "buyer_name": "Beck Scott Arthur",
+      "role": "President and CEO",
+      "transaction_date": "2026-07-10",
+      "file_date": "2026-07-10",
+      "shares": 1076923.0,
+      "price_per_share": 3.25,
+      "total_dollars": 3499999.75,
+      "security": "Class A Common Stock",
+      "accession_no": "0002093315-26-000008-form4-07102026_090758.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "EVMN",
+      "company": "Evommune, Inc.",
+      "buyer_name": "Carver Kyle",
+      "role": "Chief Financial Officer",
+      "transaction_date": "2026-07-08",
+      "file_date": "2026-07-10",
+      "shares": 1000.0,
+      "price_per_share": 13.26,
+      "total_dollars": 13260.0,
+      "security": "Common Stock",
+      "accession_no": "0001757072-26-000007-primarydocument.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "VENU",
+      "company": "Venu Holding Corp",
+      "buyer_name": "ROTH JAY W",
+      "role": "CEO & Chairman",
+      "transaction_date": "2026-07-09",
+      "file_date": "2026-07-10",
+      "shares": 7850.0,
+      "price_per_share": 2.5364,
+      "total_dollars": 19910.74,
+      "security": "Common Stock, par value $0.001",
+      "accession_no": "0001493152-26-032886-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "PALI",
+      "company": "PALISADE BIO, INC.",
+      "buyer_name": "Baltera Robert Jr.",
+      "role": "Director",
+      "transaction_date": "2026-07-08",
+      "file_date": "2026-07-10",
+      "shares": 20000.0,
+      "price_per_share": 1.9899,
+      "total_dollars": 39798.0,
+      "security": "Common Stock",
+      "accession_no": "0001493152-26-032884-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "PALI",
+      "company": "PALISADE BIO, INC.",
+      "buyer_name": "Baltera Robert Jr.",
+      "role": "Director",
+      "transaction_date": "2026-07-09",
+      "file_date": "2026-07-10",
+      "shares": 25000.0,
+      "price_per_share": 1.956,
+      "total_dollars": 48900.0,
+      "security": "Common Stock",
+      "accession_no": "0001493152-26-032884-ownership.xml",
+      "transaction_code": "P"
+    },
     {
       "ticker": "WRAP",
       "company": "WRAP TECHNOLOGIES, INC.",
@@ -1543,6 +1413,62 @@
       "total_dollars": 230288.30000000002,
       "security": "Common Stock",
       "accession_no": "0001493152-26-032775-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "BCDA",
+      "company": "BioCardia, Inc.",
+      "buyer_name": "Altman Peter",
+      "role": "President and CEO",
+      "transaction_date": "2026-07-08",
+      "file_date": "2026-07-10",
+      "shares": 5500.0,
+      "price_per_share": 0.97,
+      "total_dollars": 5335.0,
+      "security": "Common Stock",
+      "accession_no": "0001437749-26-023365-rdgdoc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "BCDA",
+      "company": "BioCardia, Inc.",
+      "buyer_name": "Altman Peter",
+      "role": "President and CEO",
+      "transaction_date": "2026-07-09",
+      "file_date": "2026-07-10",
+      "shares": 1000.0,
+      "price_per_share": 0.9,
+      "total_dollars": 900.0,
+      "security": "Common Stock",
+      "accession_no": "0001437749-26-023365-rdgdoc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "BCDA",
+      "company": "BioCardia, Inc.",
+      "buyer_name": "Altman Peter",
+      "role": "President and CEO",
+      "transaction_date": "2026-07-10",
+      "file_date": "2026-07-10",
+      "shares": 1000.0,
+      "price_per_share": 0.94,
+      "total_dollars": 940.0,
+      "security": "Common Stock",
+      "accession_no": "0001437749-26-023365-rdgdoc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "CULP",
+      "company": "CULP INC",
+      "buyer_name": "CULP ROBERT GEORGE IV",
+      "role": "President & CEO",
+      "transaction_date": "2026-07-09",
+      "file_date": "2026-07-10",
+      "shares": 2768.0,
+      "price_per_share": 3.33,
+      "total_dollars": 9217.44,
+      "security": "Common Stock",
+      "accession_no": "0001294280-26-000004-primary_doc.xml",
       "transaction_code": "P"
     },
     {
@@ -2985,230 +2911,6 @@
       "total_dollars": 100000.0386,
       "security": "Common Stock",
       "accession_no": "0001493152-26-032069-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "YPF",
-      "company": "YPF SOCIEDAD ANONIMA",
-      "buyer_name": "Marin Horacio Daniel",
-      "role": "Chairman of the Board/ CEO",
-      "transaction_date": "2026-07-02",
-      "file_date": "2026-07-06",
-      "shares": 2840.0,
-      "price_per_share": 46.35,
-      "total_dollars": 131634.0,
-      "security": "Class D Common Stock",
-      "accession_no": "0001292814-26-003681-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "YPF",
-      "company": "YPF SOCIEDAD ANONIMA",
-      "buyer_name": "Farina Matias Osvaldo",
-      "role": "VP Upstream",
-      "transaction_date": "2026-07-02",
-      "file_date": "2026-07-06",
-      "shares": 4357.0,
-      "price_per_share": 46.26,
-      "total_dollars": 201554.81999999998,
-      "security": "Class D Common Stock",
-      "accession_no": "0001292814-26-003679-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "YPF",
-      "company": "YPF SOCIEDAD ANONIMA",
-      "buyer_name": "Farina Matias Osvaldo",
-      "role": "VP Upstream",
-      "transaction_date": "2026-07-02",
-      "file_date": "2026-07-06",
-      "shares": 4518.0,
-      "price_per_share": 44.21,
-      "total_dollars": 199740.78,
-      "security": "American Depositary Shares",
-      "accession_no": "0001292814-26-003679-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "SWPR",
-      "company": "SunPower Inc.",
-      "buyer_name": "Rodgers Thurman J",
-      "role": "Chief Executive Officer",
-      "transaction_date": "2026-07-01",
-      "file_date": "2026-07-06",
-      "shares": 7226186.0,
-      "price_per_share": 0.0,
-      "total_dollars": 0.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075658-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "SWPR",
-      "company": "SunPower Inc.",
-      "buyer_name": "Rodgers Thurman J",
-      "role": "Chief Executive Officer",
-      "transaction_date": "2026-07-01",
-      "file_date": "2026-07-06",
-      "shares": 633250.0,
-      "price_per_share": 0.0,
-      "total_dollars": 0.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075658-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "CUEN",
-      "company": "Cuentas Inc.",
-      "buyer_name": "Maimon Shalom Arik",
-      "role": "CEO",
-      "transaction_date": "2026-07-01",
-      "file_date": "2026-07-06",
-      "shares": 200.0,
-      "price_per_share": 0.35,
-      "total_dollars": 70.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075600-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "CUEN",
-      "company": "Cuentas Inc.",
-      "buyer_name": "Maimon Shalom Arik",
-      "role": "CEO",
-      "transaction_date": "2026-07-01",
-      "file_date": "2026-07-06",
-      "shares": 1000.0,
-      "price_per_share": 0.35,
-      "total_dollars": 350.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075600-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "CUEN",
-      "company": "Cuentas Inc.",
-      "buyer_name": "Maimon Shalom Arik",
-      "role": "CEO",
-      "transaction_date": "2026-07-01",
-      "file_date": "2026-07-06",
-      "shares": 1600.0,
-      "price_per_share": 0.36,
-      "total_dollars": 576.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075600-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "CUEN",
-      "company": "Cuentas Inc.",
-      "buyer_name": "Maimon Shalom Arik",
-      "role": "CEO",
-      "transaction_date": "2026-07-02",
-      "file_date": "2026-07-06",
-      "shares": 100.0,
-      "price_per_share": 0.42,
-      "total_dollars": 42.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075600-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "CUEN",
-      "company": "Cuentas Inc.",
-      "buyer_name": "Maimon Shalom Arik",
-      "role": "CEO",
-      "transaction_date": "2026-07-02",
-      "file_date": "2026-07-06",
-      "shares": 100.0,
-      "price_per_share": 0.45,
-      "total_dollars": 45.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075600-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "CUEN",
-      "company": "Cuentas Inc.",
-      "buyer_name": "Maimon Shalom Arik",
-      "role": "CEO",
-      "transaction_date": "2026-07-02",
-      "file_date": "2026-07-06",
-      "shares": 200.0,
-      "price_per_share": 0.44,
-      "total_dollars": 88.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075600-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "CUEN",
-      "company": "Cuentas Inc.",
-      "buyer_name": "Maimon Shalom Arik",
-      "role": "CEO",
-      "transaction_date": "2026-07-02",
-      "file_date": "2026-07-06",
-      "shares": 2000.0,
-      "price_per_share": 0.42,
-      "total_dollars": 840.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075600-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "TURB",
-      "company": "Turbo Energy, S.A.",
-      "buyer_name": "Canavate Marti Emilio",
-      "role": "Director",
-      "transaction_date": "2026-05-19",
-      "file_date": "2026-07-06",
-      "shares": 1000.0,
-      "price_per_share": 1.31,
-      "total_dollars": 1310.0,
-      "security": "American Depositary Shares",
-      "accession_no": "0001213900-26-075550-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "TURB",
-      "company": "Turbo Energy, S.A.",
-      "buyer_name": "Bellvis Enrique Selva",
-      "role": "Chairman of the Board",
-      "transaction_date": "2026-05-29",
-      "file_date": "2026-07-06",
-      "shares": 9500.0,
-      "price_per_share": 1.09,
-      "total_dollars": 10355.0,
-      "security": "American Depositary Shares",
-      "accession_no": "0001213900-26-075548-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "TURB",
-      "company": "Turbo Energy, S.A.",
-      "buyer_name": "Soria Herandez Mariano",
-      "role": "CEO, Interim CFO, GM & Dir.",
-      "transaction_date": "2026-05-28",
-      "file_date": "2026-07-06",
-      "shares": 4300.0,
-      "price_per_share": 1.16,
-      "total_dollars": 4988.0,
-      "security": "American Depositary Shares",
-      "accession_no": "0001213900-26-075531-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "SWPR",
-      "company": "SunPower Inc.",
-      "buyer_name": "MCCRANIE J DANIEL",
-      "role": "Director",
-      "transaction_date": "2026-07-01",
-      "file_date": "2026-07-06",
-      "shares": 93650.0,
-      "price_per_share": 0.0,
-      "total_dollars": 0.0,
-      "security": "Common Stock",
-      "accession_no": "0001213900-26-075520-ownership.xml",
       "transaction_code": "P"
     }
   ]
