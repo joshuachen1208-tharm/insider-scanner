@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-12T12:18:04.110284+00:00",
+  "generated_at": "2026-07-13T13:50:31.477614+00:00",
   "lookback_days": 3,
   "cluster_window_days": 5,
-  "total_transactions": 115,
-  "total_clusters": 6,
+  "total_transactions": 126,
+  "total_clusters": 7,
   "clusters": [
     {
       "ticker": "EWSB",
@@ -370,6 +370,82 @@
           "total_dollars": 591410.0,
           "security": "Common Stock",
           "accession_no": "0001437749-26-023065-rdgdoc.xml",
+          "transaction_code": "P"
+        }
+      ],
+      "signal_strength": "VERY STRONG"
+    },
+    {
+      "ticker": "IPX",
+      "company": "IPERIONX Ltd",
+      "insider_count": 2,
+      "insiders": [
+        {
+          "name": "Arima Anastasios",
+          "role": "Chief Executive Officer",
+          "shares": 138720.0,
+          "dollars": 497227.968,
+          "date": "2026-07-10"
+        },
+        {
+          "name": "Hannigan Todd",
+          "role": "Executive Chairman",
+          "shares": 225000.0,
+          "dollars": 805185.0,
+          "date": "2026-07-10"
+        },
+        {
+          "name": "Hannigan Todd",
+          "role": "Executive Chairman",
+          "shares": 300000.0,
+          "dollars": 1075980.0,
+          "date": "2026-07-13"
+        }
+      ],
+      "total_shares": 663720.0,
+      "total_dollars": 2378392.968,
+      "date_range": "2026-07-10 \u2013 2026-07-13",
+      "transactions": [
+        {
+          "ticker": "IPX",
+          "company": "IPERIONX Ltd",
+          "buyer_name": "Arima Anastasios",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-10",
+          "file_date": "2026-07-13",
+          "shares": 138720.0,
+          "price_per_share": 3.5844,
+          "total_dollars": 497227.968,
+          "security": "IPX Ordinary Shares",
+          "accession_no": "0001864247-26-000007-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "IPX",
+          "company": "IPERIONX Ltd",
+          "buyer_name": "Hannigan Todd",
+          "role": "Executive Chairman",
+          "transaction_date": "2026-07-10",
+          "file_date": "2026-07-13",
+          "shares": 225000.0,
+          "price_per_share": 3.5786,
+          "total_dollars": 805185.0,
+          "security": "IPX Ordinary Shares",
+          "accession_no": "0001864148-26-000007-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "IPX",
+          "company": "IPERIONX Ltd",
+          "buyer_name": "Hannigan Todd",
+          "role": "Executive Chairman",
+          "transaction_date": "2026-07-13",
+          "file_date": "2026-07-13",
+          "shares": 300000.0,
+          "price_per_share": 3.5866,
+          "total_dollars": 1075980.0,
+          "security": "IPX Ordinary Shares",
+          "accession_no": "0001864148-26-000007-primary_doc.xml",
           "transaction_code": "P"
         }
       ],
@@ -1303,6 +1379,174 @@
     }
   ],
   "all_transactions": [
+    {
+      "ticker": "IPX",
+      "company": "IPERIONX Ltd",
+      "buyer_name": "Arima Anastasios",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-10",
+      "file_date": "2026-07-13",
+      "shares": 138720.0,
+      "price_per_share": 3.5844,
+      "total_dollars": 497227.968,
+      "security": "IPX Ordinary Shares",
+      "accession_no": "0001864247-26-000007-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "IPX",
+      "company": "IPERIONX Ltd",
+      "buyer_name": "Hannigan Todd",
+      "role": "Executive Chairman",
+      "transaction_date": "2026-07-10",
+      "file_date": "2026-07-13",
+      "shares": 225000.0,
+      "price_per_share": 3.5786,
+      "total_dollars": 805185.0,
+      "security": "IPX Ordinary Shares",
+      "accession_no": "0001864148-26-000007-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "IPX",
+      "company": "IPERIONX Ltd",
+      "buyer_name": "Hannigan Todd",
+      "role": "Executive Chairman",
+      "transaction_date": "2026-07-13",
+      "file_date": "2026-07-13",
+      "shares": 300000.0,
+      "price_per_share": 3.5866,
+      "total_dollars": 1075980.0,
+      "security": "IPX Ordinary Shares",
+      "accession_no": "0001864148-26-000007-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "ANIX",
+      "company": "Anixa Biosciences Inc",
+      "buyer_name": "KUMAR AMIT",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-10",
+      "file_date": "2026-07-13",
+      "shares": 5000.0,
+      "price_per_share": 3.04,
+      "total_dollars": 15200.0,
+      "security": "Common Stock",
+      "accession_no": "0001493152-26-032961-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "TDIC",
+      "company": "Dreamland Ltd",
+      "buyer_name": "Seto Wai Yue",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-07",
+      "file_date": "2026-07-13",
+      "shares": 580000.0,
+      "price_per_share": 3.75,
+      "total_dollars": 2175000.0,
+      "security": "Class A Ordinary Shares, par value US$0.00125 per share",
+      "accession_no": "0001493152-26-032902-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "TDIC",
+      "company": "Dreamland Ltd",
+      "buyer_name": "Seto Wai Yue",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-07",
+      "file_date": "2026-07-13",
+      "shares": 72000.0,
+      "price_per_share": 3.75,
+      "total_dollars": 270000.0,
+      "security": "Class B Ordinary Shares, par value US$0.00125 per share",
+      "accession_no": "0001493152-26-032902-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "VALE",
+      "company": "Vale S.A.",
+      "buyer_name": "Viana Madeira Andre",
+      "role": "Director",
+      "transaction_date": "2026-06-17",
+      "file_date": "2026-07-13",
+      "shares": 9.0,
+      "price_per_share": 16.0,
+      "total_dollars": 144.0,
+      "security": "Common Shares",
+      "accession_no": "0001292814-26-003745-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "CAI",
+      "company": "Caris Life Sciences, Inc.",
+      "buyer_name": "HALBERT JON",
+      "role": "Director",
+      "transaction_date": "2026-05-15",
+      "file_date": "2026-07-13",
+      "shares": 68000.0,
+      "price_per_share": 14.56,
+      "total_dollars": 990080.0,
+      "security": "Common Stock",
+      "accession_no": "0001189394-26-000005-wk-form4_1783940766.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "PRQR",
+      "company": "ProQR Therapeutics N.V.",
+      "buyer_name": "de Boer Daniel Anton",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-09",
+      "file_date": "2026-07-13",
+      "shares": 150000.0,
+      "price_per_share": 1.74,
+      "total_dollars": 261000.0,
+      "security": "Ordinary Shares",
+      "accession_no": "0001104659-26-082890-tm2620241-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-06",
+      "file_date": "2026-07-13",
+      "shares": 165420.0,
+      "price_per_share": 16.46,
+      "total_dollars": 2722813.2,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-082843-tm2620307-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-07",
+      "file_date": "2026-07-13",
+      "shares": 211260.0,
+      "price_per_share": 16.72,
+      "total_dollars": 3532267.1999999997,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-082843-tm2620307-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-08",
+      "file_date": "2026-07-13",
+      "shares": 185880.0,
+      "price_per_share": 16.45,
+      "total_dollars": 3057726.0,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-082843-tm2620307-1_4seq1.xml",
+      "transaction_code": "P"
+    },
     {
       "ticker": "RDGL",
       "company": "VIVOS INC",
@@ -2897,20 +3141,6 @@
       "total_dollars": 19800.0,
       "security": "Common Stock",
       "accession_no": "0001493152-26-032229-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "GRNQ",
-      "company": "Greenpro Capital Corp.",
-      "buyer_name": "LEE CHONG KUANG",
-      "role": "Chief Executive Officer",
-      "transaction_date": "2026-06-30",
-      "file_date": "2026-07-06",
-      "shares": 65591.0,
-      "price_per_share": 1.5246,
-      "total_dollars": 100000.0386,
-      "security": "Common Stock",
-      "accession_no": "0001493152-26-032069-ownership.xml",
       "transaction_code": "P"
     }
   ]
