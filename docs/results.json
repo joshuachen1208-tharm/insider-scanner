@@ -1,10 +1,107 @@
 {
-  "generated_at": "2026-07-19T12:20:02.341155+00:00",
+  "generated_at": "2026-07-20T13:33:29.807276+00:00",
   "lookback_days": 3,
   "cluster_window_days": 5,
   "total_transactions": 130,
-  "total_clusters": 10,
+  "total_clusters": 11,
   "clusters": [
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "insider_count": 2,
+      "insiders": [
+        {
+          "name": "Shu Ting",
+          "role": "Director",
+          "shares": 7471500.0,
+          "dollars": 0.0,
+          "date": "2026-03-26"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 186840.0,
+          "dollars": 3211779.6,
+          "date": "2026-07-09"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 95040.0,
+          "dollars": 1588118.4000000001,
+          "date": "2026-07-10"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 213480.0,
+          "dollars": 3680395.1999999997,
+          "date": "2026-07-13"
+        }
+      ],
+      "total_shares": 7966860.0,
+      "total_dollars": 8480293.2,
+      "date_range": "2026-03-26 \u2013 2026-07-13",
+      "transactions": [
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Shu Ting",
+          "role": "Director",
+          "transaction_date": "2026-03-26",
+          "file_date": "2026-07-20",
+          "shares": 7471500.0,
+          "price_per_share": 0.0,
+          "total_dollars": 0.0,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0001104659-26-084915-tm2620851-2_4seq1.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-09",
+          "file_date": "2026-07-20",
+          "shares": 186840.0,
+          "price_per_share": 17.19,
+          "total_dollars": 3211779.6,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-10",
+          "file_date": "2026-07-20",
+          "shares": 95040.0,
+          "price_per_share": 16.71,
+          "total_dollars": 1588118.4000000001,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-13",
+          "file_date": "2026-07-20",
+          "shares": 213480.0,
+          "price_per_share": 17.24,
+          "total_dollars": 3680395.1999999997,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
+          "transaction_code": "P"
+        }
+      ],
+      "signal_strength": "VERY STRONG"
+    },
     {
       "ticker": "IPX",
       "company": "IPERIONX Ltd",
@@ -160,7 +257,7 @@
     {
       "ticker": "NONE",
       "company": "Sterling Real Estate Trust",
-      "insider_count": 6,
+      "insider_count": 3,
       "insiders": [
         {
           "name": "Carlson Michael Paul",
@@ -182,59 +279,10 @@
           "shares": 338.691,
           "dollars": 4999.9936257,
           "date": "2026-07-01"
-        },
-        {
-          "name": "Monte Mark David",
-          "role": "Director",
-          "shares": 15.0237,
-          "dollars": 152.039844,
-          "date": "2026-07-10"
-        },
-        {
-          "name": "Monte Mark David",
-          "role": "Director",
-          "shares": 39.0645,
-          "dollars": 478.54012500000005,
-          "date": "2026-07-10"
-        },
-        {
-          "name": "Starr Gayle P",
-          "role": "Director",
-          "shares": 36.7759,
-          "dollars": 372.539867,
-          "date": "2026-07-10"
-        },
-        {
-          "name": "Starr Gayle P",
-          "role": "Director",
-          "shares": 16.1996,
-          "dollars": 163.93995199999998,
-          "date": "2026-07-10"
-        },
-        {
-          "name": "Starr Gayle P",
-          "role": "Director",
-          "shares": 10.3458,
-          "dollars": 127.46025600000002,
-          "date": "2026-07-10"
-        },
-        {
-          "name": "Starr Gayle P",
-          "role": "Director",
-          "shares": 8.7159,
-          "dollars": 106.769775,
-          "date": "2026-07-10"
-        },
-        {
-          "name": "Miller Benjamin S.",
-          "role": "President",
-          "shares": 20.3747,
-          "dollars": 249.590075,
-          "date": "2026-07-10"
         }
       ],
-      "total_shares": 124837.7033,
-      "total_dollars": 1259150.8714997,
+      "total_shares": 124691.2032,
+      "total_dollars": 1257499.9916057,
       "date_range": "2026-07-01 \u2013 2026-07-15",
       "transactions": [
         {
@@ -277,104 +325,6 @@
           "total_dollars": 4999.9936257,
           "security": "Shares of Limited Liability Company Interests",
           "accession_no": "0001104659-26-083404-tm2620338-2_4aseq1.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "NONE",
-          "company": "Fundrise Income Real Estate Fund, LLC",
-          "buyer_name": "Monte Mark David",
-          "role": "Director",
-          "transaction_date": "2026-07-10",
-          "file_date": "2026-07-13",
-          "shares": 15.0237,
-          "price_per_share": 10.12,
-          "total_dollars": 152.039844,
-          "security": "Common Shares",
-          "accession_no": "0001435109-26-000118-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "NONE",
-          "company": "Fundrise Real Estate Interval Fund, LLC",
-          "buyer_name": "Monte Mark David",
-          "role": "Director",
-          "transaction_date": "2026-07-10",
-          "file_date": "2026-07-13",
-          "shares": 39.0645,
-          "price_per_share": 12.25,
-          "total_dollars": 478.54012500000005,
-          "security": "Common Shares",
-          "accession_no": "0001435109-26-000117-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "NONE",
-          "company": "Fundrise Income Real Estate Fund, LLC",
-          "buyer_name": "Starr Gayle P",
-          "role": "Director",
-          "transaction_date": "2026-07-10",
-          "file_date": "2026-07-13",
-          "shares": 36.7759,
-          "price_per_share": 10.13,
-          "total_dollars": 372.539867,
-          "security": "Common Shares",
-          "accession_no": "0001435109-26-000116-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "NONE",
-          "company": "Fundrise Income Real Estate Fund, LLC",
-          "buyer_name": "Starr Gayle P",
-          "role": "Director",
-          "transaction_date": "2026-07-10",
-          "file_date": "2026-07-13",
-          "shares": 16.1996,
-          "price_per_share": 10.12,
-          "total_dollars": 163.93995199999998,
-          "security": "Common Shares",
-          "accession_no": "0001435109-26-000116-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "NONE",
-          "company": "Fundrise Real Estate Interval Fund, LLC",
-          "buyer_name": "Starr Gayle P",
-          "role": "Director",
-          "transaction_date": "2026-07-10",
-          "file_date": "2026-07-13",
-          "shares": 10.3458,
-          "price_per_share": 12.32,
-          "total_dollars": 127.46025600000002,
-          "security": "Common Shares",
-          "accession_no": "0001435109-26-000115-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "NONE",
-          "company": "Fundrise Real Estate Interval Fund, LLC",
-          "buyer_name": "Starr Gayle P",
-          "role": "Director",
-          "transaction_date": "2026-07-10",
-          "file_date": "2026-07-13",
-          "shares": 8.7159,
-          "price_per_share": 12.25,
-          "total_dollars": 106.769775,
-          "security": "Common Shares",
-          "accession_no": "0001435109-26-000115-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "NONE",
-          "company": "Fundrise Real Estate Interval Fund, LLC",
-          "buyer_name": "Miller Benjamin S.",
-          "role": "President",
-          "transaction_date": "2026-07-10",
-          "file_date": "2026-07-13",
-          "shares": 20.3747,
-          "price_per_share": 12.25,
-          "total_dollars": 249.590075,
-          "security": "Common Shares",
-          "accession_no": "0001435109-26-000112-primary_doc.xml",
           "transaction_code": "P"
         }
       ],
@@ -1166,6 +1116,104 @@
     }
   ],
   "all_transactions": [
+    {
+      "ticker": "OWLS",
+      "company": "OBOOK HOLDINGS INC.",
+      "buyer_name": "WANG CHUN KAI",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-17",
+      "file_date": "2026-07-20",
+      "shares": 1257.0,
+      "price_per_share": 5.606,
+      "total_dollars": 7046.742,
+      "security": "Class A Common Shares",
+      "accession_no": "0002109337-26-000010-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "YQ",
+      "company": "17 Education & Technology Group Inc.",
+      "buyer_name": "Liu Chang",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-17",
+      "file_date": "2026-07-20",
+      "shares": 7633.0,
+      "price_per_share": 2.0813,
+      "total_dollars": 15886.5629,
+      "security": "American depositary shares",
+      "accession_no": "0001193125-26-308294-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Shu Ting",
+      "role": "Director",
+      "transaction_date": "2026-03-26",
+      "file_date": "2026-07-20",
+      "shares": 7471500.0,
+      "price_per_share": 0.0,
+      "total_dollars": 0.0,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-084915-tm2620851-2_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-09",
+      "file_date": "2026-07-20",
+      "shares": 186840.0,
+      "price_per_share": 17.19,
+      "total_dollars": 3211779.6,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-10",
+      "file_date": "2026-07-20",
+      "shares": 95040.0,
+      "price_per_share": 16.71,
+      "total_dollars": 1588118.4000000001,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-13",
+      "file_date": "2026-07-20",
+      "shares": 213480.0,
+      "price_per_share": 17.24,
+      "total_dollars": 3680395.1999999997,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "SLAI",
+      "company": "SOLAI Ltd",
+      "buyer_name": "Law Man San",
+      "role": "Director",
+      "transaction_date": "2026-07-16",
+      "file_date": "2026-07-20",
+      "shares": 54275.0,
+      "price_per_share": 3.5745,
+      "total_dollars": 194005.9875,
+      "security": "American Depositary Shares",
+      "accession_no": "0001104659-26-084845-tm2620854-1_4seq1.xml",
+      "transaction_code": "P"
+    },
     {
       "ticker": "IVYIX",
       "company": "Institutional Investment Strategy Fund",
@@ -2886,104 +2934,6 @@
       "total_dollars": 270000.0,
       "security": "Class B Ordinary Shares, par value US$0.00125 per share",
       "accession_no": "0001493152-26-032902-ownership.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "NONE",
-      "company": "Fundrise Income Real Estate Fund, LLC",
-      "buyer_name": "Monte Mark David",
-      "role": "Director",
-      "transaction_date": "2026-07-10",
-      "file_date": "2026-07-13",
-      "shares": 15.0237,
-      "price_per_share": 10.12,
-      "total_dollars": 152.039844,
-      "security": "Common Shares",
-      "accession_no": "0001435109-26-000118-primary_doc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "NONE",
-      "company": "Fundrise Real Estate Interval Fund, LLC",
-      "buyer_name": "Monte Mark David",
-      "role": "Director",
-      "transaction_date": "2026-07-10",
-      "file_date": "2026-07-13",
-      "shares": 39.0645,
-      "price_per_share": 12.25,
-      "total_dollars": 478.54012500000005,
-      "security": "Common Shares",
-      "accession_no": "0001435109-26-000117-primary_doc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "NONE",
-      "company": "Fundrise Income Real Estate Fund, LLC",
-      "buyer_name": "Starr Gayle P",
-      "role": "Director",
-      "transaction_date": "2026-07-10",
-      "file_date": "2026-07-13",
-      "shares": 36.7759,
-      "price_per_share": 10.13,
-      "total_dollars": 372.539867,
-      "security": "Common Shares",
-      "accession_no": "0001435109-26-000116-primary_doc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "NONE",
-      "company": "Fundrise Income Real Estate Fund, LLC",
-      "buyer_name": "Starr Gayle P",
-      "role": "Director",
-      "transaction_date": "2026-07-10",
-      "file_date": "2026-07-13",
-      "shares": 16.1996,
-      "price_per_share": 10.12,
-      "total_dollars": 163.93995199999998,
-      "security": "Common Shares",
-      "accession_no": "0001435109-26-000116-primary_doc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "NONE",
-      "company": "Fundrise Real Estate Interval Fund, LLC",
-      "buyer_name": "Starr Gayle P",
-      "role": "Director",
-      "transaction_date": "2026-07-10",
-      "file_date": "2026-07-13",
-      "shares": 10.3458,
-      "price_per_share": 12.32,
-      "total_dollars": 127.46025600000002,
-      "security": "Common Shares",
-      "accession_no": "0001435109-26-000115-primary_doc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "NONE",
-      "company": "Fundrise Real Estate Interval Fund, LLC",
-      "buyer_name": "Starr Gayle P",
-      "role": "Director",
-      "transaction_date": "2026-07-10",
-      "file_date": "2026-07-13",
-      "shares": 8.7159,
-      "price_per_share": 12.25,
-      "total_dollars": 106.769775,
-      "security": "Common Shares",
-      "accession_no": "0001435109-26-000115-primary_doc.xml",
-      "transaction_code": "P"
-    },
-    {
-      "ticker": "NONE",
-      "company": "Fundrise Real Estate Interval Fund, LLC",
-      "buyer_name": "Miller Benjamin S.",
-      "role": "President",
-      "transaction_date": "2026-07-10",
-      "file_date": "2026-07-13",
-      "shares": 20.3747,
-      "price_per_share": 12.25,
-      "total_dollars": 249.590075,
-      "security": "Common Shares",
-      "accession_no": "0001435109-26-000112-primary_doc.xml",
       "transaction_code": "P"
     }
   ]
