@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-26T12:29:41.756963+00:00",
+  "generated_at": "2026-07-27T13:58:17.141658+00:00",
   "lookback_days": 3,
   "cluster_window_days": 5,
-  "total_transactions": 185,
+  "total_transactions": 196,
   "total_clusters": 14,
   "clusters": [
     {
@@ -97,6 +97,334 @@
           "total_dollars": 12375025.0,
           "security": "Ordinary Shares",
           "accession_no": "0001104659-26-085113-tm2620801-1_4seq1.xml",
+          "transaction_code": "P"
+        }
+      ],
+      "signal_strength": "VERY STRONG"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "insider_count": 2,
+      "insiders": [
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 498660.0,
+          "dollars": 8287729.2,
+          "date": "2026-07-21"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 59940.0,
+          "dollars": 956043.0,
+          "date": "2026-07-22"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 123780.0,
+          "dollars": 1978004.4000000001,
+          "date": "2026-07-22"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 60000.0,
+          "dollars": 932400.0,
+          "date": "2026-07-23"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 60000.0,
+          "dollars": 936000.0,
+          "date": "2026-07-23"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 301440.0,
+          "dollars": 4774809.6,
+          "date": "2026-07-23"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 178800.0,
+          "dollars": 3080724.0,
+          "date": "2026-07-14"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 135540.0,
+          "dollars": 2294692.2,
+          "date": "2026-07-15"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 111840.0,
+          "dollars": 1856544.0000000002,
+          "date": "2026-07-16"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 83460.0,
+          "dollars": 1382097.5999999999,
+          "date": "2026-07-17"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 112500.0,
+          "dollars": 1876500.0,
+          "date": "2026-07-20"
+        },
+        {
+          "name": "Shu Ting",
+          "role": "Director",
+          "shares": 7471500.0,
+          "dollars": 0.0,
+          "date": "2026-03-26"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 186840.0,
+          "dollars": 3211779.6,
+          "date": "2026-07-09"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 95040.0,
+          "dollars": 1588118.4000000001,
+          "date": "2026-07-10"
+        },
+        {
+          "name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "shares": 213480.0,
+          "dollars": 3680395.1999999997,
+          "date": "2026-07-13"
+        }
+      ],
+      "total_shares": 9692820.0,
+      "total_dollars": 36835837.2,
+      "date_range": "2026-03-26 \u2013 2026-07-23",
+      "transactions": [
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-21",
+          "file_date": "2026-07-27",
+          "shares": 498660.0,
+          "price_per_share": 16.62,
+          "total_dollars": 8287729.2,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000003-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-22",
+          "file_date": "2026-07-27",
+          "shares": 59940.0,
+          "price_per_share": 15.95,
+          "total_dollars": 956043.0,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000003-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-22",
+          "file_date": "2026-07-27",
+          "shares": 123780.0,
+          "price_per_share": 15.98,
+          "total_dollars": 1978004.4000000001,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000003-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-23",
+          "file_date": "2026-07-27",
+          "shares": 60000.0,
+          "price_per_share": 15.54,
+          "total_dollars": 932400.0,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000003-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-23",
+          "file_date": "2026-07-27",
+          "shares": 60000.0,
+          "price_per_share": 15.6,
+          "total_dollars": 936000.0,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000003-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-23",
+          "file_date": "2026-07-27",
+          "shares": 301440.0,
+          "price_per_share": 15.84,
+          "total_dollars": 4774809.6,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000003-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-14",
+          "file_date": "2026-07-23",
+          "shares": 178800.0,
+          "price_per_share": 17.23,
+          "total_dollars": 3080724.0,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000001-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-15",
+          "file_date": "2026-07-23",
+          "shares": 135540.0,
+          "price_per_share": 16.93,
+          "total_dollars": 2294692.2,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000001-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-16",
+          "file_date": "2026-07-23",
+          "shares": 111840.0,
+          "price_per_share": 16.6,
+          "total_dollars": 1856544.0000000002,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000001-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-17",
+          "file_date": "2026-07-23",
+          "shares": 83460.0,
+          "price_per_share": 16.56,
+          "total_dollars": 1382097.5999999999,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000001-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-20",
+          "file_date": "2026-07-23",
+          "shares": 112500.0,
+          "price_per_share": 16.68,
+          "total_dollars": 1876500.0,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0002029760-26-000001-primary_doc.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Shu Ting",
+          "role": "Director",
+          "transaction_date": "2026-03-26",
+          "file_date": "2026-07-20",
+          "shares": 7471500.0,
+          "price_per_share": 0.0,
+          "total_dollars": 0.0,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0001104659-26-084915-tm2620851-2_4seq1.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-09",
+          "file_date": "2026-07-20",
+          "shares": 186840.0,
+          "price_per_share": 17.19,
+          "total_dollars": 3211779.6,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-10",
+          "file_date": "2026-07-20",
+          "shares": 95040.0,
+          "price_per_share": 16.71,
+          "total_dollars": 1588118.4000000001,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "COE",
+          "company": "51Talk Online Education Group",
+          "buyer_name": "Huang Jack Jiajia",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-13",
+          "file_date": "2026-07-20",
+          "shares": 213480.0,
+          "price_per_share": 17.24,
+          "total_dollars": 3680395.1999999997,
+          "security": "Class A Ordinary Share, par value US$0.0001",
+          "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
           "transaction_code": "P"
         }
       ],
@@ -1257,208 +1585,6 @@
           "total_dollars": 70543.9,
           "security": "Common Stock",
           "accession_no": "0001231919-26-000774-form4-07202026_100743.xml",
-          "transaction_code": "P"
-        }
-      ],
-      "signal_strength": "VERY STRONG"
-    },
-    {
-      "ticker": "COE",
-      "company": "51Talk Online Education Group",
-      "insider_count": 2,
-      "insiders": [
-        {
-          "name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "shares": 178800.0,
-          "dollars": 3080724.0,
-          "date": "2026-07-14"
-        },
-        {
-          "name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "shares": 135540.0,
-          "dollars": 2294692.2,
-          "date": "2026-07-15"
-        },
-        {
-          "name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "shares": 111840.0,
-          "dollars": 1856544.0000000002,
-          "date": "2026-07-16"
-        },
-        {
-          "name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "shares": 83460.0,
-          "dollars": 1382097.5999999999,
-          "date": "2026-07-17"
-        },
-        {
-          "name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "shares": 112500.0,
-          "dollars": 1876500.0,
-          "date": "2026-07-20"
-        },
-        {
-          "name": "Shu Ting",
-          "role": "Director",
-          "shares": 7471500.0,
-          "dollars": 0.0,
-          "date": "2026-03-26"
-        },
-        {
-          "name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "shares": 186840.0,
-          "dollars": 3211779.6,
-          "date": "2026-07-09"
-        },
-        {
-          "name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "shares": 95040.0,
-          "dollars": 1588118.4000000001,
-          "date": "2026-07-10"
-        },
-        {
-          "name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "shares": 213480.0,
-          "dollars": 3680395.1999999997,
-          "date": "2026-07-13"
-        }
-      ],
-      "total_shares": 8589000.0,
-      "total_dollars": 18970851.0,
-      "date_range": "2026-03-26 \u2013 2026-07-20",
-      "transactions": [
-        {
-          "ticker": "COE",
-          "company": "51Talk Online Education Group",
-          "buyer_name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-14",
-          "file_date": "2026-07-23",
-          "shares": 178800.0,
-          "price_per_share": 17.23,
-          "total_dollars": 3080724.0,
-          "security": "Class A Ordinary Share, par value US$0.0001",
-          "accession_no": "0002029760-26-000001-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "COE",
-          "company": "51Talk Online Education Group",
-          "buyer_name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-15",
-          "file_date": "2026-07-23",
-          "shares": 135540.0,
-          "price_per_share": 16.93,
-          "total_dollars": 2294692.2,
-          "security": "Class A Ordinary Share, par value US$0.0001",
-          "accession_no": "0002029760-26-000001-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "COE",
-          "company": "51Talk Online Education Group",
-          "buyer_name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-16",
-          "file_date": "2026-07-23",
-          "shares": 111840.0,
-          "price_per_share": 16.6,
-          "total_dollars": 1856544.0000000002,
-          "security": "Class A Ordinary Share, par value US$0.0001",
-          "accession_no": "0002029760-26-000001-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "COE",
-          "company": "51Talk Online Education Group",
-          "buyer_name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-17",
-          "file_date": "2026-07-23",
-          "shares": 83460.0,
-          "price_per_share": 16.56,
-          "total_dollars": 1382097.5999999999,
-          "security": "Class A Ordinary Share, par value US$0.0001",
-          "accession_no": "0002029760-26-000001-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "COE",
-          "company": "51Talk Online Education Group",
-          "buyer_name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-20",
-          "file_date": "2026-07-23",
-          "shares": 112500.0,
-          "price_per_share": 16.68,
-          "total_dollars": 1876500.0,
-          "security": "Class A Ordinary Share, par value US$0.0001",
-          "accession_no": "0002029760-26-000001-primary_doc.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "COE",
-          "company": "51Talk Online Education Group",
-          "buyer_name": "Shu Ting",
-          "role": "Director",
-          "transaction_date": "2026-03-26",
-          "file_date": "2026-07-20",
-          "shares": 7471500.0,
-          "price_per_share": 0.0,
-          "total_dollars": 0.0,
-          "security": "Class A Ordinary Share, par value US$0.0001",
-          "accession_no": "0001104659-26-084915-tm2620851-2_4seq1.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "COE",
-          "company": "51Talk Online Education Group",
-          "buyer_name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-09",
-          "file_date": "2026-07-20",
-          "shares": 186840.0,
-          "price_per_share": 17.19,
-          "total_dollars": 3211779.6,
-          "security": "Class A Ordinary Share, par value US$0.0001",
-          "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "COE",
-          "company": "51Talk Online Education Group",
-          "buyer_name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-10",
-          "file_date": "2026-07-20",
-          "shares": 95040.0,
-          "price_per_share": 16.71,
-          "total_dollars": 1588118.4000000001,
-          "security": "Class A Ordinary Share, par value US$0.0001",
-          "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "COE",
-          "company": "51Talk Online Education Group",
-          "buyer_name": "Huang Jack Jiajia",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-13",
-          "file_date": "2026-07-20",
-          "shares": 213480.0,
-          "price_per_share": 17.24,
-          "total_dollars": 3680395.1999999997,
-          "security": "Class A Ordinary Share, par value US$0.0001",
-          "accession_no": "0001104659-26-084902-tm2620851-1_4seq1.xml",
           "transaction_code": "P"
         }
       ],
@@ -2963,6 +3089,82 @@
       "signal_strength": "STRONG"
     },
     {
+      "ticker": "ANIX",
+      "company": "Anixa Biosciences Inc",
+      "insider_count": 2,
+      "insiders": [
+        {
+          "name": "KUMAR AMIT",
+          "role": "Chief Executive Officer",
+          "shares": 3000.0,
+          "dollars": 11190.0,
+          "date": "2026-07-24"
+        },
+        {
+          "name": "KUMAR AMIT",
+          "role": "Chief Executive Officer",
+          "shares": 5000.0,
+          "dollars": 17300.0,
+          "date": "2026-07-20"
+        },
+        {
+          "name": "Titterton Lewis H jr",
+          "role": "Director",
+          "shares": 12000.0,
+          "dollars": 41640.0,
+          "date": "2026-07-20"
+        }
+      ],
+      "total_shares": 20000.0,
+      "total_dollars": 70130.0,
+      "date_range": "2026-07-20 \u2013 2026-07-24",
+      "transactions": [
+        {
+          "ticker": "ANIX",
+          "company": "Anixa Biosciences Inc",
+          "buyer_name": "KUMAR AMIT",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-24",
+          "file_date": "2026-07-27",
+          "shares": 3000.0,
+          "price_per_share": 3.73,
+          "total_dollars": 11190.0,
+          "security": "Common Stock",
+          "accession_no": "0001493152-26-034723-ownership.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "ANIX",
+          "company": "Anixa Biosciences Inc",
+          "buyer_name": "KUMAR AMIT",
+          "role": "Chief Executive Officer",
+          "transaction_date": "2026-07-20",
+          "file_date": "2026-07-21",
+          "shares": 5000.0,
+          "price_per_share": 3.46,
+          "total_dollars": 17300.0,
+          "security": "Common Stock",
+          "accession_no": "0001493152-26-034027-ownership.xml",
+          "transaction_code": "P"
+        },
+        {
+          "ticker": "ANIX",
+          "company": "Anixa Biosciences Inc",
+          "buyer_name": "Titterton Lewis H jr",
+          "role": "Director",
+          "transaction_date": "2026-07-20",
+          "file_date": "2026-07-20",
+          "shares": 12000.0,
+          "price_per_share": 3.47,
+          "total_dollars": 41640.0,
+          "security": "Common Stock",
+          "accession_no": "0001493152-26-033949-ownership.xml",
+          "transaction_code": "P"
+        }
+      ],
+      "signal_strength": "MODERATE"
+    },
+    {
       "ticker": "CHCO",
       "company": "CITY HOLDING CO",
       "insider_count": 4,
@@ -3113,64 +3315,163 @@
         }
       ],
       "signal_strength": "STRONG"
+    }
+  ],
+  "all_transactions": [
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-21",
+      "file_date": "2026-07-27",
+      "shares": 498660.0,
+      "price_per_share": 16.62,
+      "total_dollars": 8287729.2,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0002029760-26-000003-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-22",
+      "file_date": "2026-07-27",
+      "shares": 59940.0,
+      "price_per_share": 15.95,
+      "total_dollars": 956043.0,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0002029760-26-000003-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-22",
+      "file_date": "2026-07-27",
+      "shares": 123780.0,
+      "price_per_share": 15.98,
+      "total_dollars": 1978004.4000000001,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0002029760-26-000003-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-23",
+      "file_date": "2026-07-27",
+      "shares": 60000.0,
+      "price_per_share": 15.54,
+      "total_dollars": 932400.0,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0002029760-26-000003-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-23",
+      "file_date": "2026-07-27",
+      "shares": 60000.0,
+      "price_per_share": 15.6,
+      "total_dollars": 936000.0,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0002029760-26-000003-primary_doc.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "COE",
+      "company": "51Talk Online Education Group",
+      "buyer_name": "Huang Jack Jiajia",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-23",
+      "file_date": "2026-07-27",
+      "shares": 301440.0,
+      "price_per_share": 15.84,
+      "total_dollars": 4774809.6,
+      "security": "Class A Ordinary Share, par value US$0.0001",
+      "accession_no": "0002029760-26-000003-primary_doc.xml",
+      "transaction_code": "P"
     },
     {
       "ticker": "ANIX",
       "company": "Anixa Biosciences Inc",
-      "insider_count": 2,
-      "insiders": [
-        {
-          "name": "KUMAR AMIT",
-          "role": "Chief Executive Officer",
-          "shares": 5000.0,
-          "dollars": 17300.0,
-          "date": "2026-07-20"
-        },
-        {
-          "name": "Titterton Lewis H jr",
-          "role": "Director",
-          "shares": 12000.0,
-          "dollars": 41640.0,
-          "date": "2026-07-20"
-        }
-      ],
-      "total_shares": 17000.0,
-      "total_dollars": 58940.0,
-      "date_range": "2026-07-20 \u2013 2026-07-20",
-      "transactions": [
-        {
-          "ticker": "ANIX",
-          "company": "Anixa Biosciences Inc",
-          "buyer_name": "KUMAR AMIT",
-          "role": "Chief Executive Officer",
-          "transaction_date": "2026-07-20",
-          "file_date": "2026-07-21",
-          "shares": 5000.0,
-          "price_per_share": 3.46,
-          "total_dollars": 17300.0,
-          "security": "Common Stock",
-          "accession_no": "0001493152-26-034027-ownership.xml",
-          "transaction_code": "P"
-        },
-        {
-          "ticker": "ANIX",
-          "company": "Anixa Biosciences Inc",
-          "buyer_name": "Titterton Lewis H jr",
-          "role": "Director",
-          "transaction_date": "2026-07-20",
-          "file_date": "2026-07-20",
-          "shares": 12000.0,
-          "price_per_share": 3.47,
-          "total_dollars": 41640.0,
-          "security": "Common Stock",
-          "accession_no": "0001493152-26-033949-ownership.xml",
-          "transaction_code": "P"
-        }
-      ],
-      "signal_strength": "MODERATE"
-    }
-  ],
-  "all_transactions": [
+      "buyer_name": "KUMAR AMIT",
+      "role": "Chief Executive Officer",
+      "transaction_date": "2026-07-24",
+      "file_date": "2026-07-27",
+      "shares": 3000.0,
+      "price_per_share": 3.73,
+      "total_dollars": 11190.0,
+      "security": "Common Stock",
+      "accession_no": "0001493152-26-034723-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "GLSI",
+      "company": "Greenwich LifeSciences, Inc.",
+      "buyer_name": "Patel Snehal",
+      "role": "CEO and CFO",
+      "transaction_date": "2026-07-23",
+      "file_date": "2026-07-27",
+      "shares": 2500.0,
+      "price_per_share": 13.14,
+      "total_dollars": 32850.0,
+      "security": "Common Stock",
+      "accession_no": "0001493152-26-034675-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "GLSI",
+      "company": "Greenwich LifeSciences, Inc.",
+      "buyer_name": "Patel Snehal",
+      "role": "CEO and CFO",
+      "transaction_date": "2026-07-24",
+      "file_date": "2026-07-27",
+      "shares": 1100.0,
+      "price_per_share": 12.88,
+      "total_dollars": 14168.0,
+      "security": "Common Stock",
+      "accession_no": "0001493152-26-034675-ownership.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "PEBO",
+      "company": "PEOPLES BANCORP INC",
+      "buyer_name": "Smith Dwight Eric",
+      "role": "Director",
+      "transaction_date": "2026-07-23",
+      "file_date": "2026-07-27",
+      "shares": 1000.0,
+      "price_per_share": 39.8099,
+      "total_dollars": 39809.9,
+      "security": "Common Stock",
+      "accession_no": "0000318300-26-000185-wk-form4_1785158418.xml",
+      "transaction_code": "P"
+    },
+    {
+      "ticker": "MKC",
+      "company": "MCCORMICK & CO INC",
+      "buyer_name": "Conway Michael Aaron",
+      "role": "Director",
+      "transaction_date": "2026-07-23",
+      "file_date": "2026-07-27",
+      "shares": 1100.0,
+      "price_per_share": 50.2067,
+      "total_dollars": 55227.369999999995,
+      "security": "Common Stock - Non Voting",
+      "accession_no": "0000063754-26-000284-form4.xml",
+      "transaction_code": "P"
+    },
     {
       "ticker": "VMI",
       "company": "VALMONT INDUSTRIES INC",
